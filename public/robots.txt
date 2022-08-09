@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://www.daimlertruckssomerton.com.au/sitemap.xml
