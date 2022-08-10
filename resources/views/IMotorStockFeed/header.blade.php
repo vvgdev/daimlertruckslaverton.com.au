@@ -21,8 +21,9 @@
         <div class="container">
             <div class="mobile-nav clearfix">
                 <a id="mobile-nav-btn" type="button" class="mobile-menu"><span class="d-block">Menu</span> </a>
+                <a id="mobile-nav-btn" type="button" class="mobile-call pull-right" href="tel:(03) 9680 8777"><i class="fa fa-phone"></i> Call </a>
                 <a href="{{env('IMOTOR_URL')}}" class="daimler-logo">
-                    <img class="company-logo" src="{{env('IMOTOR_URL')}}/images/daimlertrucks_somerton_logo.jpeg"/>
+                    <img class="company-logo" src="{{env('IMOTOR_URL')}}/images/daimlertrucks_laverton_logo.jpeg"/>
                 </a>
                 <div class="drop-menu">
                     <div class="panel">
@@ -33,7 +34,7 @@
                             <a href="{{env('IMOTOR_URL')}}/brands/mercedes-benz/trucks" title="Mercedes-Benz Trucks">Mercedes-Benz Trucks</a>
                             <a href="{{env('IMOTOR_URL')}}/brands/freightliner" title="Freightliner">Freightliner</a>
                             <a href="{{env('IMOTOR_URL')}}/brands/fuso/canter" title="Fuso">Fuso</a>
-                            <!-- <a href="http://www.mbvcnorthside.com.au" title="Mercedes-Benz Vans">Mercedes-Benz Vans</a> -->
+                            <a href="{{env('IMOTOR_URL')}}/brands/mercedes-benz/van" title="Mercedes-Benz Vans">Mercedes-Benz Vans</a>
                             <a href="{{env('IMOTOR_URL')}}/stock/used-trucks/" title="Used Trucks">Used Trucks</a>
                             <a href="{{env('IMOTOR_URL')}}/engines" title="Engines">Engines</a>
                             <a href="{{env('IMOTOR_URL')}}/transmissions" title="Transmissions">Transmissions</a>
@@ -65,7 +66,6 @@
                             <a href="{{env('IMOTOR_URL')}}/warranty" title="Warranty">Warranty</a>
                             <a href="{{env('IMOTOR_URL')}}/roadside-assistance" title="Roadside Assistance">Roadside Assistance</a>
                             <a href="{{env('IMOTOR_URL')}}/service-plans" title="Service Plans">Service Plans</a>
-                            <a href="{{env('IMOTOR_URL')}}/elite-support" title="Elite Support">Elite Support</a>
                         </div>
                     </div>
                     <div class="panel">
@@ -100,7 +100,7 @@
             <div class="row desktop-nav">
                 <div class="col-md-4 text-center text-md-left">
                     <a href="{{env('IMOTOR_URL')}}">
-                        <img class="company-logo" src="{{env('IMOTOR_URL')}}/images/daimlertrucks_somerton_logo.jpeg"/>
+                        <img class="company-logo" src="{{env('IMOTOR_URL')}}/images/daimlertrucks_laverton_logo.jpeg"/>
                     </a>
                 </div>  
                 <div class="col-md-8">
@@ -109,7 +109,6 @@
                     <nav class="topmenu">
                         <div class="menu-section">
                             <ul class="company-links">
-                                <li class=""><a href="{{env('IMOTOR_URL')}}/elite-support" title="Elite Support"><img class="elite-logo pull-right" src="{{env('IMOTOR_URL')}}/images/elite-logo.png" width="70"></a></li>
                                 <li class=""><a href="https://www.velocitytruckcentres.com.au/"><img class="vtc-logo pull-right" src="{{env('IMOTOR_URL')}}/images/vtc_logo.png" width="125" height="75"/></a></li>
                                 <li class=""><a href="https://www.velocitytruckcentres.com.au/careers" target="_blank"><i class="fa fa-user"></i>Careers</a> </li>
                                 <li class=""><a href="{{env('IMOTOR_URL')}}/about-us"><i class="fa fa-info"></i>About us</a> </li>
@@ -128,9 +127,9 @@
                                         <li>
                                             <a href="{{env('IMOTOR_URL')}}/brands/fuso/canter" title="Fuso">Fuso</a>
                                         </li>
-                                        <!-- <li>
-                                            <a href="http://www.mbvcnorthside.com.au" title="Mercedes-Benz Vans">Mercedes-Benz Vans</a>
-                                        </li> -->
+                                        <li>
+                                            <a href="{{env('IMOTOR_URL')}}/brands/mercedes-benz/van" title="Mercedes-Benz Vans">Mercedes-Benz Vans</a>
+                                        </li>
                                         <li>
                                             <a href="{{env('IMOTOR_URL')}}/stock/used-trucks/" title="Used Trucks">Used Trucks</a>
                                         </li>
@@ -177,9 +176,6 @@
                                         </li>
                                         <li>
                                             <a href="{{env('IMOTOR_URL')}}/service-plans" title="Service Plans">Service Plans</a>
-                                        </li>
-                                        <li>
-                                            <a href="{{env('IMOTOR_URL')}}/elite-support" title="Elite Support">Elite Support</a>
                                         </li>
                                     </ol>
                                 </li>

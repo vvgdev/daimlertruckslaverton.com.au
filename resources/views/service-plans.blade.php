@@ -22,6 +22,10 @@
                             <a href="#benz_tab" data-toggle="tab" aria-expanded="true" class="active">
                             <i class="dtm-mercedes-logo"></i>Mercedes Benz</a>
                         </li>
+                        <li class="tab-title" id="benzvans_desc">
+                            <a href="#benzvans_tab" data-toggle="tab" aria-expanded="false">
+                            <i class="dtm-mercedes-logo"></i> Mercedes Benz Vans</a>
+                        </li>
                         <li class="tab-title" id="freightliner_desc">
                             <a href="#freightliner_tab" data-toggle="tab" aria-expanded="false">
                             <i class="dtm-icon-gallery-truck"></i> Freightliner</a>
@@ -161,6 +165,96 @@
                             </div>
                         </div>            
                     </div>
+                    <div class="tab-pane" id="benzvans_tab">
+                        <div class="content para">
+                            <h3>Mercedes-Benz ServiceCare</h3>
+                            <p>
+                            Mercedes-Benz ServiceCare makes your vehicle maintenance simple and flexible by providing competitive capped price servicing and repair choices to suit your specific van or ute requirements.
+                            </p>
+                            <h5 class="mt-5 mb-3" style="text-transform:uppercase">Choose from three levels of ServiceCare</h5>
+                            <hr>
+                            <div class="innerspec-tabs dealer-accordion">
+                                <div class="panel">
+                                    <div class="heading collapsed" data-toggle="collapse" href="#w1-01" aria-expanded="false">
+                                        <div class="panel-title"><h5 class="d-inline-block m-0">1. BestBasic Pre-paid</h5> <i class="dtm-angle-right"></i></div>
+                                    </div>
+                                    <div class="panel-collapse collapse" id="w1-01" aria-expanded="false">
+                                        <div class="panel-body">
+                                            <p>
+                                                A ServiceCare Best Basic Pre-paid Plan can help you control vehicle or fleet operating costs by offering a range of maintenance and repair options with preset, transparent and competitive pricing.
+                                            </p>
+                                            <p>
+                                                Your plan can be purchased at the same time you purchase your vehicle, or at any time before the first service - and covers the first 3-5 (depending on which plan you choose) scheduled services in accordance with the relevant maintenance booklet regardless of your vehicle's warranty period. Any unused service can be transferred with the vehicle when ownership changes.
+                                            </p>
+                                            <div class="download-brochure">
+                                                <a href="/pdf/MBA_ServiceCare_Brochure_Mar2020.pdf" download>
+                                                    <img src="/images/pdf_icon.png" width="50">
+                                                    <span>Download ServiceCare brochure</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel">
+                                    <div class="heading collapsed" data-toggle="collapse" href="#w1-02" aria-expanded="false">
+                                        <div class="panel-title"><h5 class="d-inline-block m-0">2. BestBasic Pay-as-you-go</h5> <i class="dtm-angle-right"></i></div>
+                                    </div>
+                                    <div class="panel-collapse collapse" id="w1-02" aria-expanded="false">
+                                        <div class="panel-body">
+                                            <p>
+                                                To provide added peace of mind to owners of eligible vans and utes, ServiceCare BestBasic Pay-as-you-go provides capped-price servicing from authorised Mercedes-Benz Vans service dealers.
+                                            </p>
+                                            <p>
+                                                ServiceCare Pay-as-you-go is available on any scheduled servicing that falls due within the term of your new vehicle warranty up to a maximum of 5 services*.
+                                            </p>
+                                            <div class="download-brochure">
+                                                <a href="/pdf/Mercedes-Benz-Vans-ServiceCare-Terms-and-Conditions-2020.pdf" download>
+                                                    <img src="/images/pdf_icon.png" width="50">
+                                                    <span>Pay-as-you-go T&Cs</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel">
+                                    <div class="heading collapsed" data-toggle="collapse" href="#w1-03" aria-expanded="false">
+                                        <div class="panel-title"><h5 class="d-inline-block m-0">3. Complete</h5> <i class="dtm-angle-right"></i></div>
+                                    </div>
+                                    <div class="panel-collapse collapse" id="w1-03" aria-expanded="false">
+                                        <div class="panel-body">
+                                            <p>
+                                                Transparent pricing makes the Complete Plan perfect for planning your expenditure; it's an entirely fixed-cost maintenance package that can be tailored to suit your business's specific needs. It covers all services and wear and tear components for up to five years or more, to suit your needs1. Enquire with your retailer to find out more. Plus, it covers repairs and roadside assistance past the standard warranty period, and all work is carried out by Mercedes-Benz trained technicians, fitting only Mercedes-Benz Genuine Parts. 
+                                            </p>
+                                            <p class="mt-5" style="line-height: 20px;">
+                                                <small>
+                                                    <sup>1</sup> Contact your authorised Mercedes-Benz Vans retailer to obtain an accurate quote based on your mileage and term of ownership. Standard Terms and Conditions of the ServiceCare Agreement and ServiceCare Pre-Paid Plan Inclusions and Exclusions apply.
+                                                </small>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h5 class="mt-5 mb-3" style="text-transform:uppercase">Explore genuine capped price brake pad and disc replacements</h5>
+                            <hr>
+                            <div class="innerspec-tabs dealer-accordion">
+                                <div class="panel">
+                                    <div class="heading collapsed" data-toggle="collapse" href="#w1-04" aria-expanded="false">
+                                        <div class="panel-title"><h5 class="d-inline-block m-0">1. ServiceCare Brakes</h5> <i class="dtm-angle-right"></i></div>
+                                    </div>
+                                    <div class="panel-collapse collapse" id="w1-04" aria-expanded="false">
+                                        <div class="panel-body">
+                                            <p>
+                                                Rest assured knowing that you can now receive a capped price Mercedes-Benz Genuine brake pad and disc replacement at participating Retailers. All Mercedes-Benz GenuineParts come with a 2 year unlimited kilometre parts warranty.
+                                            </p>
+                                            <p>
+                                                Only trust a Mercedes-Benz factory-trained technician to maintain your vehicle.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="tab-pane" id="freightliner_tab">
                         <div class="content para">
 						    <h4>Freightliner Service Plans</h4>
@@ -195,8 +289,8 @@
                                 <li>Predetermined instalments</li>
                                 <li>Available at any point in the truck's life.</li>
                             </ul>
-                            <p>To find out even more about the Service Plans that Freightliner offers contact Daimler Trucks Somerton Freightliner or download the brochure using the below link.</p>
-                            <p>To find out even more about the Service Plans that Freightliner offers contact Daimler Trucks Somerton Freightliner.</p>
+                            <p>To find out even more about the Service Plans that Freightliner offers contact Daimler Trucks Laverton Freightliner or download the brochure using the below link.</p>
+                            <p>To find out even more about the Service Plans that Freightliner offers contact Daimler Trucks Laverton Freightliner.</p>
                             <p>*Terms and conditions apply. Please contact your authorised Freightliner commercial dealer for a copy of the full terms.</p>
                             <h3 class="mt-5">5 YEARS/500,000KMS COMPLIMENTARY BESTBASIC SERVICE PLAN</h3>
                             <p>Need another reason to purchase the all new Cascadia? How about a 5 years/500,000kms Complimentary BestBasic Service Plan.*</p>
@@ -211,7 +305,7 @@
                     <div class="tab-pane" id="fuso_tab">
                         <div class="content capped-service para">
 						    <h3 class="bold">2022 CAPPED PRICE SERVICING</h3>
-                            <p>Fuso is now taking the guesswork out of your scheduled servicing. With all our authorised <a href="">Fuso dealerships</a>, you can now get capped, upfront, totally transparent pricing for your Fuso Truck or Bus through Capped Price Servicing.*</p>
+                            <p>Fuso is now taking the guesswork out of your scheduled servicing. With Fuso Capped Price servicing from participating authorised Fuso dealers, you can now get capped, upfront, totally transparent pricing for your Fuso Truck or Bus.*</p>
                             <p>That's great value for Genuine Parts and Fuso Factory trained technicians.</p>
                             <p>* Please refer to the Annual Fuso Capped Price Servicing terms and conditions.</p>
                             <hr/>

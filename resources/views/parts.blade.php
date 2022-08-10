@@ -23,6 +23,11 @@
                             <a href="#benz_tab" data-toggle="tab" aria-expanded="true" class="active">
                             <i class="dtm-mercedes-logo"></i>Mercedes Benz</a>
                         </li>
+                        <li class="tab-title" id="benz_van_desc">
+                            <a href="#benz_van_tab" data-toggle="tab" aria-expanded="false">
+                                <i class="dtm-mercedes-logo"></i>Mercedes Benz Van
+                            </a>
+                        </li>
                         <li class="tab-title" id="freightliner_desc">
                             <a href="#freightliner_tab" data-toggle="tab" aria-expanded="false" class="">
                             <i class="dtm-icon-gallery-truck"></i> Freightliner</a>
@@ -35,23 +40,36 @@
                 </div>
                 <div class="tab-content">
                     <div class="tab-pane active" id="benz_tab">
-                        <h3 class="page-heading mb-4">Mercedes-Benz Truck Parts North Melbourne | Truck Parts Melbourne, VIC</h3>
+                        <h3 class="page-heading mb-4">Mercedes-Benz Truck Parts Melbourne | Truck Parts Melbourne VIC</h3>
                         <div class="content para">
-                        <p>Always insist on Mercedes-Benz Genuine Parts.</p>
+                        <p class="bold">Always insist on Mercedes-Benz Genuine Parts.</p>
                         <p>Accept no compromise when it comes to maintaining, servicing and caring for your Mercedes-Benz Truck.</p>
                         <p>Once you experience Mercedes-Benz quality, nothing else compares. That’s why every time you have your vehicle serviced or repaired we strongly recommend that you insist on using our Genuine Parts.</p>
-                        <p><strong>Daimler Trucks Somerton Mercedes-Benz's</strong> qualified after sales personnel have the latest tools and equipment at their disposal to ensure they obtain the right part for the job, and that it will be fitted correctly.</p>
+                        <p><strong>Laverton Mercedes-Benz Trucks's</strong> qualified after sales personnel have the latest tools and equipment at their disposal to ensure they obtain the right part for the job, and that it will be fitted correctly.</p>
                         <p>With Mercedes-Benz Genuine Parts you benefit from more than one hundred years’ experience in vehicle and parts construction. Thanks to their exceptional quality, approved safety and outstanding reliability, these parts are a compelling proposition. What is more, the extreme durability and outstanding price/performance ratio of our Genuine Parts is particularly cost-effective.</p>
                         <p><strong>GENUINE ACCESSORIES</strong></p>
                         <p>Mercedes-Benz genuine accessories offer a range of exclusive products that deliver custom-fit Mercedes-Benz quality, improving everyday practicality and comfort. All have been carefully selected so you can add your own finishing touches to help you get the very best from your Truck.</p>
                         <p>Please call us directly or simply complete the online Spare<strong> Parts Enquiry Form</strong> and we'll contact you as soon as possible.</p>
                         </div>
                     </div>
+                    <div class="tab-pane" id="benz_van_tab">
+                        <div class="content para">
+                            <h3 class="mb-4">Genuine Mercedes-Benz Parts</h3>
+                            <p class="bold">Your one-stop shop for all your parts needs.</p>
+                            <p>The Daimler Trucks Laverton Parts Centre supplies genuine Mercedes-Benz, Freightliner and Fuso parts for trucks, buses and vans. Anything you need, we have.</p>
+                            <p class="bold">Long day at work? Well, we’re open late.</p>
+                            <h3 class="mt-4">Benefits of Genuine Parts</h3>
+                            <p>Once you experience Mercedes-Benz quality, nothing else compares. That's why every time you have your vehicle serviced or repaired we strongly recommend that you insist on using our Genuine Parts.</p>
+                            <p>Non-genuine parts can greatly compromise quality and affect the performance and safety of your Mercedes vehicle. Put simply, if a non-genuine part is fitted to your vehicle and directly, indirectly, or consequently damages your vehicle, this damage may not be covered by the manufacturer's warranty.</p>
+                            <p>Protect your investment with Genuine Parts and continue to receive the performance, style, comfort and safety that you expect from your vehicle.</p>
+                            <p>Always insist on Mercedes-Benz Genuine Parts.</p>
+                        </div>          
+                    </div>
                     <div class="tab-pane" id="freightliner_tab">
-                        <h3 class="page-heading mb-4">Freightliner Truck Parts North Melbourne | Truck Parts Melbourne, VIC</h3>
+                        <h3 class="page-heading mb-4">Freightliner Truck Parts West Melbourne | Truck Parts Melbourne, VIC</h3>
                         <div class="content para">
                         <p>It only takes one small thing to go wrong to have a big impact on your business. When you need new parts for your Freightliner truck, always insist on Genuine Freightliner Parts to keep your truck running as efficiently and smoothly as it did the day it left the factory.</p>
-                        <p>These parts are made specifically to fit your truck model and application needs, using only the highest quality materials and latest design and engineering enhancements. Thanks to <strong>Daimler Trucks Somerton Freightliner</strong> using Genuine Freightliner Parts, every part of your truck remains a genuine Freightliner for years to come.</p>
+                        <p>These parts are made specifically to fit your truck model and application needs, using only the highest quality materials and latest design and engineering enhancements. Thanks to <strong>Daimler Trucks Laverton Freightliner</strong> using Genuine Freightliner Parts, every part of your truck remains a genuine Freightliner for years to come.</p>
                         <p><strong>Why buy Genuine Freightliner Parts?</strong></p>
                         <ul><li>Ensure durable and reliable repairs, since Genuine Parts are made from the highest quality materials with specialised coatings and treatments.</li><li>Maintain the resale value of your truck by keeping it a "Genuine Freightliner".</li><li>Improve uptime by ensuring quality repairs are performed by factory-trained experts that get the job done right, the first time.</li><li>Provide optimal performance, as Genuine Freightliner Parts are made specifically to fit each individual truck and application. There is no "one size fits all" solution with Genuine Parts.</li><li>Receive the latest proprietary updates and revisions from Freightliner, a level of service that our competitors simply cannot match.</li></ul>
                         <p><strong><em>ACCEPT NO COMPROMISE WHEN IT COMES TO MAINTAINING, SERVICING, AND CARING FOR YOUR FREIGHTLINER TRUCK.</em></strong></p>
@@ -63,13 +81,13 @@
                         </div>
                     </div>
                     <div class="tab-pane" id="fuso_tab">
-                    <h3 class="page-heading mb-4">Fuso Truck Parts North Melbourne | Truck Parts Melbourne, VIC</h3>
+                        <h3 class="page-heading mb-4">Fuso Truck Parts Melbourne | Truck Parts Melbourne VIC</h3>
                         <div class="content para">
-                            <p><strong>Daimler Trucks Somerton Fuso</strong> stocks every spare part you will ever need for your Truck or Bus.</p>
-                            <h3>Daimler Trucks Somerton Fuso Genuine Parts</h3>
+                            <p><strong>Fuso Laverton</strong> stocks every spare part you will ever need for your Truck or Bus.</p>
+                            <h3>Fuso Genuine Parts</h3>
                             <p>It only takes one small thing to go wrong to have a big impact on your business. Fuso genuine parts are designed to meet manufacturer specifications and are produced to the highest quality. Avoid the risk and insist on Fuso genuine parts to ensure you are covered by Fuso’s full manufacturer's warranty.</p>
-                            <p>In the event that a genuine part fails, Fuso will not only replace the faulty part, we’ll cover any additional damage caused by its failure, including labour costs if it is fitted by Daimler Trucks Somerton Fuso.</p>
-                            <p>Daimler Trucks Somerton Fuso's qualified after sales personnel have the latest tools and equipment at their disposal to ensure they obtain the right part for the job, and that it will be fitted correctly.</p>
+                            <p>In the event that a genuine part fails, Fuso will not only replace the faulty part, we’ll cover any additional damage caused by its failure, including labour costs if it is fitted by Fuso Laverton.</p>
+                            <p><strong>Fuso Laverton's</strong> qualified after sales personnel have the latest tools and equipment at their disposal to ensure they obtain the right part for the job, and that it will be fitted correctly.</p>
                             <p>Please call us directly or simply complete the online <strong>Spare Parts Enquiry Form</strong> and we'll contact you as soon as possible.</p>
                         </div>
                     </div>

@@ -43,9 +43,6 @@
                                             <a href="{{env('IMOTOR_URL')}}/service-plans" title="Service Plans">Service Plans</a>
                                         </li>
                                         <li>
-                                            <a href="{{env('IMOTOR_URL')}}/elite-support" title="Elite Support">Elite Support</a>
-                                        </li>
-                                        <li>
                                             <a href="{{env('IMOTOR_URL')}}/parts" title="Parts">Parts</a>
                                         </li>
                                         <li>
@@ -74,9 +71,9 @@
                                         <li>
                                             <a href="{{env('IMOTOR_URL')}}/brands/fuso/canter" title="Fuso" target="_self">Fuso</a>
                                         </li>
-                                        <!-- <li>
-                                            <a href="http://www.mbvcnorthside.com.au" title="Mercedes-Benz Vans" target="_self">Mercedes-Benz Vans</a>
-                                        </li> -->
+                                        <li>
+                                            <a href="{{env('IMOTOR_URL')}}/brands/mercedes-benz/van" title="Mercedes-Benz Vans" target="_self">Mercedes-Benz Vans</a>
+                                        </li>
                                         <li>
                                             <a href="{{env('IMOTOR_URL')}}/stock/used-trucks/" title="Used Trucks">Used Trucks</a>
                                         </li>
@@ -131,12 +128,11 @@
                                 <a href="https://www.instagram.com/daimlertruckssomerton/" target="_blank" data-ga-social="instagram" class="social-link d-inline-block"><span class="instagram-icon last"></span></a>
                             </div>
                             <p class="emergency-contact clear-both">24/7 Emergency Roadside Assistance: <br> Trucks: <a href="tel:1800 033 557">1800 033 557</a><br>
-                            <a class="company-contact" href="tel:(03) 9305 4152"><i class="fa fa-phone"></i>(03) 9305 4152</a>
+                            <a class="company-contact" href="tel:(03) 9305 4152"><i class="fa fa-phone"></i>03 9680 8777</a>
                             </p>
                             <span class="footer_ham_small_copyright" style="">Copyright © {{ now()->year }} Velocity Truck Centres.</span> 
-                            <span class="footer_ham_small_copyright" style="">LMCT 0011636</span>
+                            <span class="footer_ham_small_copyright" style="">LMCT LMCT 11636</span>
                             <a href="https://www.velocitytruckcentres.com.au/"><img class="vtc-logo pull-right pt-4" src="{{env('IMOTOR_URL')}}/images/VTC_Logo_White.png" width="125" height="75"/></a>
-                            <a href="{{env('IMOTOR_URL')}}/elite-support" title="Elite Support"><img class="elite-logo pull-right mr-4 mt-3" src="{{env('IMOTOR_URL')}}/images/elite-logo.png" width="70"></a>
                         </div>
                     </div>
                 </div>

@@ -31,9 +31,6 @@
                                     <a href="/service-plans" title="Service Plans">Service Plans</a>
                                 </li>
                                 <li>
-                                    <a href="/elite-support" title="Elite Support">Elite Support</a>
-                                </li>
-                                <li>
                                     <a href="/parts" title="Parts">Parts</a>
                                 </li>
                                 <li>
@@ -62,9 +59,9 @@
                                 <li>
                                     <a href="/brands/fuso/canter" title="Fuso" target="_self">Fuso</a>
                                 </li>
-                                <!-- <li>
-                                    <a href="http://www.mbvcnorthside.com.au" title="Mercedes-Benz Vans" target="_self">Mercedes-Benz Vans</a>
-                                </li> -->
+                                <li>
+                                    <a href="/brands/mercedes-benz/van" title="Mercedes-Benz Vans" target="_self">Mercedes-Benz Vans</a>
+                                </li>
                                 <li>
                                     <a href="/stock/used-trucks/" title="Used Trucks">Used Trucks</a>
                                 </li>
@@ -133,9 +130,8 @@
                     <a class="company-contact" href="tel:{{$siteData->primary_number}}"><i class="fa fa-phone"></i>{{$siteData->primary_number}}</a>
                     </p>
                     <span class="footer_ham_small_copyright" style="">Copyright © {{ now()->year }} Velocity Truck Centres.</span> 
-                    <span class="footer_ham_small_copyright" style="">LMCT 0011636</span>
+                    <span class="footer_ham_small_copyright" style="">LMCT LMCT 11636</span>
                     <a href="https://www.velocitytruckcentres.com.au/"><img class="vtc-logo pull-right pt-4" src="/images/VTC_Logo_White.png" width="125" height="75"/></a>
-                    <a href="/elite-support" title="Elite Support"><img class="elite-logo pull-right mr-4 mt-3" src="/images/elite-logo.png" width="70"></a>
                 </div>
             </div>
         </div>

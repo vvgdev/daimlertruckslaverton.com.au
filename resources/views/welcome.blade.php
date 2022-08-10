@@ -70,22 +70,13 @@
     </div>
     <div class="welcome-text">
         <p>
-            <b>Welcome to Daimler Trucks Somerton</b>
+            <b>Welcome to Daimler Trucks Laverton</b>
         </p>
         <p>
-            Proudly part of Velocity Truck Centres, <b>Daimler Trucks Somerton</b> offers an unrivalled range of new Mercedes-Benz Trucks, Freightliner Trucks and Fuso Trucks and Buses. Our extensive range ensures we deliver commercial vehicle options for all applications from Light Commercial Vehicles to Heavy Commercial Vehicles and everything in between.
+            A truck is more than just a vehicle. It's a choice and a way of life. We understand that and make sure you leave our dealership with not just the truck you want but the truck you need.
         </p>
         <p>
-            Daimler Trucks Somerton is located just a short drive from the city's CBD in one of Melbourne's key transport hubs.
-        </p>
-        <p>
-            Our focus is to give customers a complete solution for their commercial and personal transport needs. In addition, we provide competitive finance options and full workshop services, accredited with not just our own brands, but also supporting Detroit, Cummins and Eaton with our factory trained technicians using only genuine spare parts.
-        </p>
-        <p>
-            At Daimler Trucks Somerton, we provide full parts back up for all brands along with Alliance fluid solutions and an All Makes range including trailer parts. Our workshop also offers on-site servicing as well as providing a 24-hour emergency breakdown assistance service. We are committed to making it easier for you to do business and strive to support you with consistent service and support across all of our factory owned dealerships.
-        </p>
-        <p>
-            Please browse our website and contact us via phone on <b><a href="tel:{{$siteData->primary_number}}">{{$siteData->primary_number}}</a></b> or via our contact us form if we can assist you further.
+            <b>Daimler Trucks Laverton</b> in one of Australia's largest dealerships. Our brands include <b>Mercedes-Benz, Freightliner and Fuso</b>. We sell a combination of trucks, buses and vans and are a full service dealership.
         </p>
     </div>
     <div class="row no-gutter top-brands">
@@ -103,6 +94,9 @@
                     </div>
                     <div class="item">
                         <a href="/brands/fuso/canter" title="Fuso" target="_self"><img src="{{ asset('images/Fuso-Logo.png') }}"> </a>
+                    </div>
+                    <div class="item">
+                        <a href="/brands/mercedes-benz/van" title="Mercedes-Benz Vans" target="_self"><img src="{{ asset('images/mercedesbenzvans-logo.jpeg') }}"> </a>
                     </div>
                     <div class="item">
                         <a href="/stock/used-trucks/" title="Used Trucks"> <img src="{{ asset('images/usedtrucks-logo.png') }}"> </a>

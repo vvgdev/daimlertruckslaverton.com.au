@@ -23,6 +23,11 @@
                             <a href="#benz_tab" data-toggle="tab" aria-expanded="true" class="active">
                             <i class="dtm-mercedes-logo"></i>Mercedes Benz</a>
                         </li>
+                        <li class="tab-title" id="benz_van_desc">
+                            <a href="#benz_van_tab" data-toggle="tab" aria-expanded="false">
+                                <i class="dtm-mercedes-logo"></i>Mercedes Benz Van
+                            </a>
+                        </li>
                         <li class="tab-title" id="fuso_desc">
                             <a href="#fuso_tab" data-toggle="tab" aria-expanded="false">
                             Fuso</a>
@@ -45,68 +50,32 @@
                             <p>For Emergency Roadside Assistance please call <a href="tel:1800 033 557">1800 033 557</a>.</p>
                         </div>            
                     </div>
+                    <div class="tab-pane" id="benz_van_tab">
+                        <div class="content para">
+                            <h6 class="bold">24/7 roadside assist for Mercedes-Benz vans and utes.</h6>
+                            <p>Mercedes-Benz Vans Road Care Service provides you roadside assistance in case of a breakdown in Australia, 24 hours a day, 365 days a year – at no extra cost.</p>
+                            <p>You are protected for the duration of the manufacturer’s warranty period, or while the vehicle is operating under an approved ServiceCare Pre-Paid Plan. You can continue to be covered by Mercedes-Benz Vans Road Care after the warranty period by purchasing annual membership.</p>
+                            <h6 class="bold mt-4">Roadside assistance by the people who know your van.</h6>
+                            <p><strong>Help is just a phone call away - 1800 033 557</strong></p>
+                            <p>If something happens on the road and you need assistance, simply call Vans Road Care Service, and one of our specialists will be will be on their way to help.</p>
+                            <p>If you experience any of these situations, we’ll have you back on the road in no time:</p>
+                            <ul>
+                                <li>Flat batteries and tyres</li>
+                                <li>Empty fuel tank</li>
+                                <li>Locked vehicle and lost keys</li>
+                                <li>Towing and transportation to the nearest authorised retailer</li>
+                            </ul>
+                            <p>To find out more about Mercedes-Benz Vans Road Care, and what you need to do if you require roadside assistance, make sure you read the brochure below.</p>
+                            <p>
+                                <a class="btn btn-red mt-0 mb-2" href="/pdf/mercedes-benz_vans_roadcare_brochure.pdf" target="_blank">Download Brochure</a> 
+                            </p>
+                        </div>          
+                    </div>
                     <div class="tab-pane" id="fuso_tab">
                         <div class="content para">
                             <img class="mb-4" src="/images/fuso-service.jpeg"/>
-                            <h2 class="mt-5 pt-3 mb-5">Elite Support</h2>
-                            <img src="/images/elite-support.jpeg" class="mb-5"/>
-                            <b>WE ARE AN ELITE SUPPORT CERTIFIED DEALERSHIP!</b>
-                            <p>On behalf of all the team at Daimler Trucks Somerton, we are thrilled to announce our Elite Support Certification!</p>
-                            <p>What is Elite Support you ask? Elite Support is a joint initiative by Daimler Truck and Bus and the Daimler Truck dealer network that will deliver a new level of service for customers of Mercedes-Benz, Freightliner and Fuso in Australia. The aim of Elite Support is to maximise vehicle uptime with rapid diagnosis though Express Assessment, consistent communication and robust parts availability, as well as a premium in-dealership experience. In order to achieve Elite Support certification, Daimler Truck dealerships must satisfy more than 126 criteria, providing specific standards in a variety of areas.</p>
-                            <p>“Our continued goal is to deliver better value and faster turnarounds with unmatched aftersales support. This can only be possible through continuous improvement and a commitment to improving the experience for our customers.”</p>
-                            <p>As only the second dealership in Australia and first of the major metro dealers in the network to have achieved certification, we are well on our way to delivering a point of difference to our customers and ultimately leading the industry to new benchmarks.</p>
-                            <p>Congratulations again to everyone here at Daimler Trucks Somerton on this achievement.</p>
-                            <p>So come on down and see for yourself! We can’t wait for our customers to experience the Elite Support difference!</p>
-                            <hr/>
-                            <div class="benefits">
-                                <h2 style="font-size: 26px;font-weight: 600;margin-bottom: 20px;">Benefits</h2>
-                                <div class="row">
-                                    <div class="col-md-4 form-group">
-                                        <h3 class="mt-0" style="font-size: 22px;font-weight: 600;">Express Assessment</h3>
-                                        <a class="btn btn-red-small mb-4" href="/service">Book a service</a>
-                                        <p>
-                                        All Elite Services Certified locations participate in Express Assessment which is a commitment to provide a preliminary diagnosis and communication to the customer within two hours of a truck arriving at the dealership. Express assessment is a process, not a program. It is intended to become part of the way our service department performs its day-to-day work. We commit to: communicate a preliminary diagnosis, check part availability and provide an estimate of cost and repair time.
-                                        </p>
-                                    </div>
-                                    <div class="col-md-4 form-group">
-                                        <h3 class="mt-0" style="font-size: 22px;font-weight: 600;">Maximising Uptime</h3>
-                                        <a class="btn btn-red-small mb-4" href="/contact-us">Contact Us</a>
-                                        <p>
-                                        The ultimate goal of the Elite Services Network is maximising vehicle uptime. Every Elite Services dealership must be recertified annually to ensure you experience a consistent, higher standard with every visit across our network.
-                                        </p>
-                                    </div>
-                                    <div class="col-md-4 form-group">
-                                        <h3 class="mt-0" style="font-size: 22px;font-weight: 600;">Best-Trained Techs</h3>
-                                        <a class="btn btn-red-small mb-4" href="/our-team">Meet our team</a>
-                                        <p>
-                                        Our technicians receive continual training from the experts. We focus on a solid understanding of all vehicle systems and have access to the latest tools to expedite repairs.
-                                        </p>
-                                    </div>
-                                    <div class="col-md-4 form-group">
-                                        <h3 style="font-size: 22px;font-weight: 600;">Continuous Improvement</h3>
-                                        <a class="btn btn-red-small mb-4" href="/contact-us">Contact Us</a>
-                                        <p>
-                                        Every dealership earning the Elite Services certification must meet 137 specific criteria across 20 customer service areas. To maintain these high standards, dealerships employ a Continuous Improvement Coordinator.
-                                        </p>
-                                    </div>
-                                    <div class="col-md-4 form-group">
-                                        <h3 style="font-size: 22px;font-weight: 600;">Robust Parts Available</h3>
-                                        <a class="btn btn-red-small mb-4" href="/parts">Parts Enquiry</a>
-                                        <p>
-                                        Through the combined experience of our network and close collaboration with our service team, we understand what parts we need on-hand to get you back on the road quickly. Focus Parts, our data-driven stocking program, ensures that the parts you need are never far away.
-                                        </p>
-                                    </div>
-                                    <div class="col-md-4 form-group">
-                                        <h3 style="font-size: 22px;font-weight: 600;">Exceptional Amenities</h3>
-                                        <a class="btn btn-red-small mb-4" href="/service">See our services</a>
-                                        <p>
-                                        We know that when we service your vehicle, we're servicing your business. Elite Service Certified dealers believe in providing quality repairs and timely communication from a friendly and familiar team. Our facilities are designed to minimise downtime and provide a comfortable environment for drivers as we work to get your truck back on the road.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <iframe src="https://www.youtube.com/embed/gDNgR9OqWHA" style="height:600px;width:100%;border:0;" allowfullscreen=""></iframe>
-                            <iframe src="https://www.youtube.com/embed/l2dexQJ3T3s" style="height:600px;width:100%;border:0;" allowfullscreen=""></iframe>
+                            <p>There when you need us most, Fuso’s Roadside Assistance Hotline is a 24/7 service that is committed to keeping you on the road following a breakdown or accident. Delivering emergency support in both regional and metropolitan centres, the service works in partnership with our national dealer network to ensure a priority turnaround.</p>
+                            <p>Roadside Assistance Hotline:<strong><a href="tel:1800 033 557">1800 033 557</a></strong></p>
                         </div>
                     </div>
                     <hr/>

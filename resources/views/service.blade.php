@@ -24,6 +24,11 @@
                                 <i class="dtm-mercedes-logo"></i>Mercedes Benz
                             </a>
                         </li>
+                        <li class="tab-title" id="benz_van_desc">
+                            <a href="#benz_van_tab" data-toggle="tab" aria-expanded="false">
+                                <i class="dtm-mercedes-logo"></i>Mercedes Benz Van
+                            </a>
+                        </li>
                         <li class="tab-title" id="freightliner_desc">
                             <a href="#freightliner_tab" data-toggle="tab" aria-expanded="false">
                                 <i class="dtm-icon-gallery-truck"></i> Freightliner
@@ -41,29 +46,62 @@
                         <div class="tab-content">
                             <div class="tab-pane active" id="benz_tab">
                                 <div class="content para">
-                                    <h3 class="mb-4">Mercedes-Benz Service North Melbourne | Truck Service North Melbourne VIC</h3>
+                                    <h3 class="mb-4">Mercedes-Benz Service Melbourne | Truck Service Melbourne VIC</h3>
                                     <p>Choosing the best truck for the job is an excellent start, but it is just the beginning.</p>
-                                    <p>To get the best out of your truck and to keep it running how the Mercedes-Benz engineers intended, we recommend that you have it maintained and serviced at regular intervals at <strong>Daimler Trucks Somerton Mercedes-Benz</strong>.</p>
+                                    <p>To get the best out of your truck and to keep it running how the Mercedes-Benz engineers intended, we recommend that you have it maintained and serviced at regular intervals at <strong>Laverton Mercedes-Benz Trucks</strong>.</p>
                                     <p>Every workshop that carries the famous three-pointed star is staffed and equipped for excellence, with access to the latest specification and up-to-date information across the model range.</p>
                                     <p>Trained technicians are essential, and every Mercedes-Benz technician completes a set number of hours of training and retraining every year to ensure they are up-to-date with technology.</p>
                                     <p>Finally, the equipment and tooling required to maintain a Mercedes-Benz truck is designed and developed by the same people who design and develop the vehicle. The investment you make in your fleet, from one truck to a major fleet of different sizes and configurations, demands the attention and expertise only genuine Mercedes-Benz service can deliver.</p>
                                     <p>It’s the best way to maximise uptime, maximise reliability and protect your investment.</p>
                                     
-                                    <h3>Quick, easy and inexpensive repairs.</h3>
+                                    <h6 class="mt-4">Quick, easy and inexpensive repairs.</h6>
                                     <p>Making sure that your Mercedes-Benz truck, or your entire Mercedes-Benz truck fleet, remains in optimum operating condition is the key.</p>
                                     <p>Whether you need a larger repair, like a new body panel or have a smaller problem that needs fixing like an annoying rattle, you can trust Daimler Trucks Somerton Mercedes-Benz to take care of it.</p>
                                     <p>For further information, please contact our friendly Service team for assistance with any enquiry regarding your Mercedes-Benz Trucks vehicle.</p>
-                                    <p>The Daimler Trucks Somerton Mercedes-Benz team wishes you safe and pleasant motoring.</p>
+                                    <h6 class="mt-4">Customer Amenities</h6>
+                                    <p>When you visit Daimler Trucks Laverton for your truck service, we want to ensure your time here is enjoyable. We have the following customer amenities available for your convenience and comfort:</p>
+                                    <ul>
+                                        <li>Microwave facilities</li>
+                                        <li>Free WiFi</li>
+                                        <li>Phone charging station</li>
+                                        <li>Workstation to catch up on paperwork</li>
+                                        <li>Lounge and recliners</li>
+                                        <li>State-of-the-art complimentary coffee machine</li>
+                                        <li>Vending machines</li>
+                                        <li>TV</li>
+                                        <li>Complimentary up-to-date magazines and newspapers</li>
+                                        <li>Short walk to local cafes and lunch spots</li>
+                                    </ul>
+                                    <h6 class="mt-4">The Daimler Service Difference</h6>
+                                    <ul>
+                                        <li>Australia’s largest purpose-built workshop</li>
+                                        <li>Most advanced diagnostics</li>
+                                        <li>Customer Lounge with complimentary tea and coffee</li>
+                                        <li>24-Hour Breakdown Service</li>
+                                        <li>Factory-trained technicians</li>
+                                    </ul>
+                                </div>          
+                            </div>
+                            <div class="tab-pane" id="benz_van_tab">
+                                <div class="content para">
+                                    <h3 class="mb-4">Servicing Your Mercedes-Benz Van</h3>
+                                    <p>At <strong>Mercedes-Benz Van Centre Laverton</strong> we believe choosing the best van for the job is an excellent start, but it is just the beginning.</p>
+                                    <p>Making sure that your Mercedes-Benz van, or your entire Mercedes-Benz van fleet, remains in optimum operating condition is the key.</p>
+                                    <p>The best way to do that is to insist on Genuine Service from an authorised Mercedes-Benz dealer.</p>
+                                    <p>Every workshop that carries the famous three-pointed star is staffed and equipped for excellence, with access to the latest specification and up-to-date information across the model range.</p>
+                                    <p>Trained technicians are essential, and every Mercedes-Benz technician completes a set number of hours of training and retraining every year to ensure they are up-to-date with technology.</p>
+                                    <p>Finally, the equipment and tooling required to maintain a Mercedes-Benz van is designed and developed by the same people who design and develop the vehicle. The investment you make in your fleet, from one van to a major fleet of different sizes and configurations, demands the attention and expertise only genuine Mercedes-Benz service can deliver.</p>
+                                    <p>It’s the best way to minimise downtime, maximise reliability and protect your investment.</p>
                                 </div>          
                             </div>
                             <div class="tab-pane" id="freightliner_tab">
                                 <div class="content para">
-                                    <h3 class="mb-4">Freightliner Service North Melbourne | Truck Service Melbourne, VIC</h3>
+                                    <h3 class="mb-4">Freightliner Service West Melbourne | Truck Service Melbourne VIC</h3>
                                     <p>
-                                        At <strong>Daimler Trucks Somerton Freightliner</strong> cchoosing your truck is just the beginning. We’re there for the life of your vehicle.
+                                        At <strong>Daimler Trucks Laverton Freightliner</strong> choosing your truck is just the beginning. We’re there for the life of your vehicle.
                                     </p>
                                     <p>
-                                    Daimler Trucks Somerton Freightliner have a number of servicing and repair options and Service Contracts designed to help manage your maintenance costs with flexible and affordable options. Not only will you feel reassured that trained technicians are working on your truck, you can rest assured that they will use Freightliner Genuine Parts.
+                                    Daimler Trucks Laverton Freightliner have a number of servicing and repair options and Service Contracts designed to help manage your maintenance costs with flexible and affordable options. Not only will you feel reassured that trained technicians are working on your truck, you can rest assured that they will use Freightliner Genuine Parts.
                                     </p>
                                     <h3 class="txt-uppercase">Genuine Freightliner Service</h3>
                                     <p>
@@ -90,38 +128,58 @@
                                     Express Assessment is a commitment to provide a preliminary diagnosis and communication to the customer within two hours of a truck arriving at the dealership. Express Assessment is a process, not a program. It is intended to become part of the way a service department performs its day-to-day work.
                                     </p>
                                     <p>
-                                        <strong>We commit to:</strong>
+                                        <strong>Within 2 Hours Of Service Write-Up, The Daimler Trucks Laverton Freightliner Will:</strong>
                                     </p>
                                     <ul>
-                                        <li>Communicate a preliminary diagnosis</li>
+                                        <li>Communicate single service issue diagnosis</li>
                                         <li>Check part availability</li>
                                         <li>Provide an estimate of cost and repair time</li>
+                                    </ul>
+                                    <h6 class="mt-4">Customer Amenities</h6>
+                                    <p>When you visit Daimler Trucks Laverton for your truck service, we want to ensure your time here is enjoyable. We have the following customer amenities available for your convenience and comfort:</p>
+                                    <ul>
+                                        <li>Microwave facilities</li>
+                                        <li>Free WiFi</li>
+                                        <li>Phone charging station</li>
+                                        <li>Workstation to catch up on paperwork</li>
+                                        <li>Lounge and recliners</li>
+                                        <li>State-of-the-art complimentary coffee machine</li>
+                                        <li>Vending machines</li>
+                                        <li>TV</li>
+                                        <li>Complimentary up-to-date magazines and newspapers</li>
+                                        <li>Short walk to local cafes and lunch spots</li>
+                                    </ul>
+                                    <h6 class="mt-4">The Daimler Service Difference</h6>
+                                    <ul>
+                                        <li>Australia’s largest purpose-built workshop</li>
+                                        <li>Most advanced diagnostics</li>
+                                        <li>Customer Lounge with complimentary tea and coffee</li>
+                                        <li>24-Hour Breakdown Service</li>
+                                        <li>Factory-trained technicians</li>
                                     </ul>
                                     <p>
                                     For further information, please contact our friendly Service team for assistance with any enquiry regarding your Freightliner vehicle.
                                     </p>
                                     <p>
-                                    The Daimler Trucks Somerton Freightliner team wishes you safe and pleasant motoring 
+                                    The Daimler Trucks Laverton Freightliner team wishes you safe and pleasant motoring 
                                     </p>
                                     <hr>
                                 </div>
                             </div>
                             <div class="tab-pane" id="fuso_tab">
                                 <div class="content para">
-                                    <h3 class="mb-4">Fuso Service North Melbourne | Truck Service North Melbourne VIC</h3>
+                                    <h3 class="mb-4">Fuso Service Melbourne | Truck Service Melbourne VIC</h3>
+                                    <h5>WE’VE GOT YOUR BACK.</h5>
                                     <p>
-                                        At <strong>Daimler Trucks Somerton Fuso</strong> choosing your truck or bus is just the beginning. We’re there for the life of your vehicle.
+                                        <strong>Daimler Trucks Laverton</strong> state-of-the-art service centre is focused on getting your truck, van or bus back on the road as soon as possible. We offer extended workshop hours for late night servicing, an onsite auto-electrician (available between 7am-4pm) and a 24-hour breakdown call-out service.
+                                    </p>
+                                    <h6>Service Centre</h6>
+                                    <p>
+                                    Our dedicated factory-trained technicians are qualified to work on all makes and models of vehicle from light commercial vans and trucks to heavy prime movers.
                                     </p>
                                     <p>
-                                    Daimler Trucks Somerton Fuso has a wide range of support services designed to make maintaining and repairing your vehicle as easy as possible. With expert support from our factory trained technicians, you can be confident knowing you’ve always got a great Service team behind you.
+                                    We perform logbook services as well as ad-hoc repairs. In all of our repair and maintenance work we can ensure reliability and customer satisfaction through our use of genuine Mercedes-Benz and Freightliner manufacturer parts and accessories.
                                     </p>
-                                    <p>
-                                    Best of all, at Daimler Trucks Somerton Fuso our service solutions are specifically tailored to minimise downtime. From our 24-hour roadside assistance hotline, to overnight servicing at our dealerships, we do what it takes to keep you on the road.
-                                    </p>
-                                    <p>
-                                    For further information, please contact our friendly Service team for assistance with any enquiry regarding your Fuso vehicle.
-                                    </p>
-                                    <p>The Daimler Trucks Somerton Fuso team wishes you safe and pleasant motoring.</p>
                                     <table>
                                         <thead>
                                             <tr>
@@ -135,7 +193,7 @@
                                         <tbody>
                                             <tr>
                                                 <td style="width: 40%;padding: 10px;border-bottom: 1px solid #eee;font-size:12px">
-                                                    <strong>BEST BASIC</strong><br>IIncludes all scheduled servicing work for your vehicle as specified in the Fuso maintenance booklet, carried out to Fuso quality standards. Total flexibility allows you to select a time/kilometre structure that best suits your needs.
+                                                    <strong>BEST BASIC</strong><br>Includes all scheduled servicing work for your vehicle as specified in the Fuso maintenance booklet, carried out to Fuso quality standards. Total flexibility allows you to select a time/kilometre structure that best suits your needs.
                                                 </td>
                                                 <td style="border-bottom: 1px solid #eee; color:green;">
                                                     <div>Yes</div>
@@ -165,6 +223,29 @@
                                     <p>
                                         <a class="btn btn-red-small mt-0" href="{{ asset('pdf/fuso-serviceplans-brochure.pdf') }}" target="_blank">Click here to view Service Plans</a>
                                     </p>
+                                    <h6 class="mt-4">Customer Amenities</h6>
+                                    <p>When you visit Daimler Trucks Laverton for your truck service, we want to ensure your time here is enjoyable. <br/>
+                                    <strong>We have the following customer amenities available for your convenience and comfort:</strong></p>
+                                    <ul>
+                                        <li>Microwave facilities</li>
+                                        <li>Free WiFi</li>
+                                        <li>Phone charging station</li>
+                                        <li>Workstation to catch up on paperwork</li>
+                                        <li>Lounge and recliners</li>
+                                        <li>State-of-the-art complimentary coffee machine</li>
+                                        <li>Vending machines</li>
+                                        <li>TV</li>
+                                        <li>Complimentary up-to-date magazines and newspapers</li>
+                                        <li>Short walk to local cafes and lunch spots</li>
+                                    </ul>
+                                    <h6 class="mt-4">The Daimler Service Difference</h6>
+                                    <ul>
+                                        <li>Australia’s largest purpose-built workshop</li>
+                                        <li>Most advanced diagnostics</li>
+                                        <li>Customer Lounge with complimentary tea and coffee</li>
+                                        <li>24-Hour Breakdown Service</li>
+                                        <li>Factory-trained technicians</li>
+                                    </ul>
                                     <hr>
                                 </div>
                             </div>

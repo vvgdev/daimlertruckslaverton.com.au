@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="facebook-domain-verification" content="nk61y0pixd52qxfdchfc6z5otn3529" />
-        <title>Daimler Trucks Somerton</title>
+        <title>Daimler Trucks Laverton</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
         <script src="/js/jquery-3.2.1.min.js"></script>

@@ -24,10 +24,10 @@
                             <a href="#benz_tab" data-toggle="tab" aria-expanded="true" class="active">
                             <i class="dtm-mercedes-logo"></i>Mercedes Benz</a>
                         </li>
-                        <!-- <li class="tab-title" id="benz_van_desc">
+                        <li class="tab-title" id="benz_van_desc">
                             <a href="#benz_van_tab" data-toggle="tab" aria-expanded="true">
                             <i class="dtm-mercedes-logo"></i>Mercedes Benz Van</a>
-                        </li> -->
+                        </li>
                         <li class="tab-title" id="freightliner_desc">
                             <a href="#freightliner_tab" data-toggle="tab" aria-expanded="false">
                             <i class="dtm-icon-gallery-truck"></i> Freightliner</a>
@@ -52,6 +52,22 @@
                                 <p>No Data Available.</p>
                             </div>
                         @endif                                
+                    </div>
+                    <div class="tab-pane" id="benz_van_tab">
+                        <div class="content para">
+                        @if(isset($mercedes_benz) && count($mercedes_benz) > 0)
+                            <div class="content">
+                                @foreach($mercedes_benz as $mb)
+                                    <h3>{{$mb->name}}</h3>
+                                    <iframe allowfullscreen allow="fullscreen" style="border:none;width:100%;height:326px;" src="{{$mb->embedded_iframe_src}}"></iframe>
+                                @endforeach
+                            </div>    
+                        @else
+                            <div class="content">
+                                <p>No Data Available.</p>
+                            </div>
+                        @endif 
+                        </div>            
                     </div>
                     <div class="tab-pane" id="freightliner_tab">
                         @if(isset($freightlinerData) && count($freightlinerData) > 0)

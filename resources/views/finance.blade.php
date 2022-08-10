@@ -17,42 +17,34 @@
                 <div class="alert alert-success"> {{ session()->get('message') }} </div> 
             @endif
             <div class="content para">
-                <p>Maintain your financial flexibility.</p>
-                <p>Talk to most finance companies about your needs and you'll probably have to spell it out for them. But as part of the Daimler Group, Mercedes-Benz Financial has a long history in the commercial vehicle industry - which means we know Mercedes-Benz trucks and the pressures truck owners face.</p>
-                <p>Mercedes-Benz Financial specialises in innovative financial solutions for Mercedes-Benz trucks. Our extensive knowledge of the truck market means that you'll receive a financial solution that suits you and your business.</p>
-                <p>Financial advantages for you:</p>
+                <div class="row mb-4">
+                    <div class="col-md-12 form-group">
+                        <p>Daimler Trucks Laverton is proud to offer competitive and flexible financial loans. Our on-site Business Manager makes it convenient and easy to discuss a range of finance packages available.</p>
+                        <ul>
+                            <li>Immediate finance that can be organised onsite to approved customers, saving you valuable time.</li>
+                            <li>Competitive finance rates we can negotiate better rates of finance than might be available from any banks.</li>
+                            <li>Flexible payment plans tailored to suit your individual needs and budget.</li>
+                            <li>No deposit required not all loans require a lump sum payment.</li>
+                            <li>Obligation free quotes detailing our low finance rates and summarising the range of payment options available.</li>
+                        </ul>
+                    </div>
+                </div>
+                <h4>Finance Lease</h4>
+                <p>A finance lease is a rental agreement offering fixed monthly repayments for the period of the contract, with a residual value negotiated at the beginning of the loan term.</p>
+                <p><strong>Benefits:</strong></p>
                 <ul>
-                    <li>Flexible terms: 12 - 60 months</li>
-                    <li>Fixed interest rates</li>
-                    <li>No ongoing monthly fees</li>
-                    <li>Structured payments: We can tailor repayments to suit your cash flow</li>
-                    <li>Mercedes-Benz Financial specialises in providing innovative finance solutions for Mercedes-Benz trucks, offering some of the most flexible and competitive solutions available.</li>
+                    <li>Immediate use of the vehicle with low outlay</li>
+                    <li>Fixed monthly repayments make it easier to track expenses</li>
+                    <li>At the end of the term, you can offer to purchase, re-lease or upgrade to a new vehicle</li>
                 </ul>
-                <p>Our wide range of finance solutions include:</p>
-                <ul>
-                    <li>Asset hire purchase</li>
-                    <li>Asset loan</li>
-                    <li>Finance lease</li>
-                    <li>Operating lease</li>
-                    <li>Agility Programme</li>
-                </ul>
-                <p>Agility Programme</p>
-                <p>The Mercedes-Benz Agility Finance Programme is designed to provide exceptional flexibility and peace of mind. So from the start of your journey with us, you'll remain firmly and comfortably in the driver's seat of the financial arrangement you choose for your new Mercedes-Benz truck.</p>
-                <p>Best of all, Agility allows us to guarantee the future value of your truck+. This means when your agreement comes to an end you have the option to trade, retain or return your truck. Plus with flexible terms, competitive rates and the assurance and backing of the Mercedes-Benz brand, it's one of the simplest financing decisions you'll ever make.</p>
-                <p>The benefits of Agility:</p>
-                <ul>
-                    <li>Enjoy peace of mind with the future value of your truck guaranteed by Mercedes-Benz.+</li>
-                    <li>Stay in control with the flexibility to trade, retain or return at the end of the agreement.*</li>
-                    <li>Benefit from the ability to increase your deposit or trade-in to reduce monthly repayments.</li>
-                    <li>Available on an Asset Loan or Hire Purchase.*</li>
-                </ul>
-                <p>+ Guaranteed Future Value (GFV) is subject to Excess Kilometre charges calculated at $0.15/kilometre in excess of the agreed annual allowance. Fair Wear and Tear return conditions apply. * Agility Finance is restricted to approved customers of Mercedes-Benz Financial Services Australia Pty Ltd ABN 73 074 134 517 (MBFS), and is subject to standard credit assessment and lending criteria. Please contact an authorised Mercedes-Benz dealer for further details and full terms and conditions (including vehicle eligibility).</p>
-                <p>Other Mercedes-Benz Financial Services Australia Pty Ltd brands include:</p>
-                <ul>
-                    <li>Mercedes-Benz Vans</li>
-                    <li>Freightliner Finance</li>
-                    <li>Fuso Financial</li>
-                </ul>
+                <h4>Operating Lease</h4>
+                <p>An Operating Lease enables you to manage the vehicle without having to purchase it outright., you simply return your truck to Mercedes-Benz Financial on expiry of the lease. It is suitable for businesses or individuals who regularly upgrade their vehicle. The operating lease includes finance costs, finance contract stamp duty, and pre-delivery costs.</p><p><strong>Benefits:</strong></p><ul><li>Flexible terms of 24-60 months with the flexibility of choosing your annual kilometers</li><li>Competitive monthly rentals the may be fully tax deductible (check with your dealer)</li><li>This setup removes the financial liability with the vehicles value at the end of the lease term</li></ul>
+                <h4>Hire Pruchase</h4>
+                <p>Designed for business customers who want to own their vehicle at the end of the contract. This is available for both New and Used vehicles.</p><p><strong>Benefits:</strong></p><ul><li>Vehicle ownership at the end of the contract</li><li>Little or no deposit required</li><li>Optional final balloon payment to reduce monthly repayments</li><li>Flexibility to vary contract term</li><li>May offer tax benefits (seek independent advice on your situation)</li></ul>
+                <h4>Asset Loan</h4>
+                <p>A Chattel Mortgage, commonly referred to as an Asset Loan, is where the vehicle ownership is transferred to you at the end of the finance contract. It is available for individuals, sole traders, partnerships and companies where ownership of the vehicle at the start of the finance agreement is important.</p><p><strong>Benefits:</strong></p><ul><li>Reduced monthly payments by varying the deposit</li><li>Optional final balloon payment</li><li>Final balloon payment may be refinance</li><li>Available for both new and used vehicles</li></ul>
+                <p>Please feel free to use our online form to get a quick and accurate response on financing your next truck.</p>
+                <p>Our Business Manager has a great knowledge of all the above products and is available to discuss your business and personal finance needs.</p>
             </div>
             @include('partials.location_details')
         </div>

@@ -23,6 +23,11 @@
                             <a href="#benz_tab" data-toggle="tab" aria-expanded="true" class="active">
                             <i class="dtm-mercedes-logo"></i>Mercedes Benz</a>
                         </li>
+                        <li class="tab-title" id="benz_van_desc">
+                            <a href="#benz_van_tab" data-toggle="tab" aria-expanded="false">
+                                <i class="dtm-mercedes-logo"></i>Mercedes Benz Van
+                            </a>
+                        </li>
                         <li class="tab-title" id="fuso_desc">
                             <a href="#fuso_tab" data-toggle="tab" aria-expanded="false">
                             Fuso</a>
@@ -160,17 +165,30 @@
                             </div>
                             <p>
                                 <small>
-                                    [1] Truck Warranty offers are subject to change at any time without notice. For further inclusions, exclusions, terms and conditions, please contact Daimler Trucks Somerton Mercedes-Benz.<br>
+                                    [1] Truck Warranty offers are subject to change at any time without notice. For further inclusions, exclusions, terms and conditions, please contact Laverton Mercedes-Benz Trucks.<br>
                                     [2] Vehicles sold as of 01.01.2018.<br>
                                     [3] Excludes batteries.
                                 </small>
                             </p>
                         </div>            
                     </div>
+                    <div class="tab-pane" id="benz_van_tab">
+                        <div class="content para">
+                            <h3 class="mb-4">Your New Vehicle Warranty.</h3>
+                            <p>Our comprehensive Warranty Statement means peace of mind for five years for new Mercedes-Benz Vans & Utes purchased from authorised Mercedes-Benz Retailers in Australia. Your vehicle is covered for parts and labour charges incurred in rectifying a manufacturing defect relating to materials or workmanship.</p>
+                            <p>The five year period commences from the date the vehicle was first registered.</p>
+                            <h6 class="mt-4">Your Pre-Owned Vehicle Warranty.</h6>
+                            <p>A pre-owned Mercedes-Benz Van will go the distance you can rest assured that each Mercedes-Benz pre-owned certified Vehicle purchased from an authorised retailer has been comprehensively checked. Plus, all qualifying vehicles have a Mercedes-Benz Certified Factory Warranty.</p>
+                            <p>When you purchase a Mercedes-Benz Certified Vehicle, you receive a minimum one year or the option of a two year, 250,000 kilometre, nationwide factory backed warranty.1 Note that the V-Class has an unlimited kilometre warranty.</p>
+                            <p>The Mercedes-Benz Certified Warranty offers coverage against failure of most mechanical components, as well as roadside assistance for a range of breakdowns and situations almost anywhere in Australia. To give complete peace of mind, this warranty offers cover, support and benefits that only Mercedes-Benz can provide.</p>
+                            <p style="line-height: 18px;"><small>Our goods come with guarantees that cannot be excluded under the Australian Consumer Law. You are entitled to a replacement or refund for a major failure and compensation for any other reasonably foreseeable loss or damage. You are also entitled to have the goods repaired or replaced if the goods fail to be of acceptable quality and the failure does not amount to major failure.</small></p>
+                            <p style="line-height: 18px;"><small>The benefits of this warranty are in addition to any other rights and remedies you have under a law in relation to the Vehicle. In circumstances where your rights under the Australian Consumer Law are greater than your rights under this warranty, we will always honour your rights under the Australian Consumer Law.</small></p>
+                        </div>          
+                    </div>
                     <div class="tab-pane" id="fuso_tab">
                         <div class="content para">
                             <p>
-                            Daimler Trucks Somerton Fuso trucks are built to last, but if something does go wrong, you can be confident knowing that you're covered because Fuso is the first and only Japanese truck manufacturer to offer up to 5 year cab chassis warranty as standard. That's up to 5 years across our truck and Rosa bus range for peace of mind year after year. 
+                            Fuso Laverton trucks are built to last, but if something does go wrong, you can be confident knowing that you're covered because Fuso is the first and only Japanese truck manufacturer to offer up to 5 year cab chassis warranty as standard. That's up to 5 years across our truck and Rosa bus range for peace of mind year after year. 
                             </p>
                             <p>&nbsp;</p>
                             <div class="table-responsive">
@@ -207,7 +225,7 @@
                                     </tbody>
                                 </table>
                             </div>
-                            <p>
+                            <p style="line-height: 18px;">
                                 <br><br>
                                 <small><strong>Note:</strong> The new vehicle warranty applies only to trucks and buses registered and operated in normal conditions in Australia. Vehicles operated in severe service applications, such as off-road, underground mining, crop spraying or on the beach covered under warranty for 12 months/50,000 kilometres.</small>
                             </p>
