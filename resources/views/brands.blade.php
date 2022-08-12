@@ -1,5 +1,8 @@
-@extends('layouts.app')
-
+@extends('layouts.app1')
+@section('title') Laverton {{ $response['brand_data']['name'] }} @stop
+@section('meta_title') Laverton {{ $response['brand_data']['name'] }} @stop
+@section('meta_keywords') Laverton {{ $response['brand_data']['name'] }} @stop
+@section('meta_description') Laverton {{ $response['brand_data']['name'] }} @stop
 @section('content')
 
 <section class="middle-section">

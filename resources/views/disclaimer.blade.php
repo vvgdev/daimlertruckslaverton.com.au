@@ -1,5 +1,8 @@
-@extends('layouts.app')
-
+@extends('layouts.app1')
+@section('title') Disclaimer - Daimler Trucks Laverton @stop
+@section('meta_title') Disclaimer - Daimler Trucks Laverton @stop
+@section('meta_keywords') Disclaimer - Daimler Trucks Laverton @stop
+@section('meta_description') Disclaimer - Daimler Trucks Laverton @stop
 @section('content')
 <section class="middle-section">
     <!--Internal Banner-->

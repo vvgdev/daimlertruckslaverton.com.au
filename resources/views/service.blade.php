@@ -1,5 +1,8 @@
-@extends('layouts.app')
-
+@extends('layouts.app1')
+@section('title') Truck Repairs Melbourne | Daimler Truck Service Fuso Merc Freightliner VIC @stop
+@section('meta_title') Truck Repairs Melbourne | Daimler Truck Service Fuso Merc Freightliner VIC @stop
+@section('meta_keywords') Daimler Trucks Laverton Service @stop
+@section('meta_description') Our dedicated factory-trained technicians are qualified to work on all makes and models of vehicle from light commercial vans and trucks to heavy prime movers. @stop
 @section('content')
 
 <section class="middle-section">

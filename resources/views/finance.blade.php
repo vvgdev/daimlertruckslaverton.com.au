@@ -1,6 +1,9 @@
 
-@extends('layouts.app')
-
+@extends('layouts.app1')
+@section('title') Truck Finance Melbourne | Get Finance For Trucks VIC @stop
+@section('meta_title') Truck Finance Melbourne | Get Finance For Trucks VIC @stop
+@section('meta_keywords') Finance - Daimler Trucks Laverton @stop
+@section('meta_description') Daimler Trucks Laverton is proud to offer competitive and flexible financial loans. Our on-site Business Manager makes it convenient and easy to discuss a range of finance packages available. @stop
 @section('content')
 <section class="middle-section">
     <!--Internal Banner-->

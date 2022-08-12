@@ -17,7 +17,7 @@ class InventoryController extends Controller
             $param = array();
             $param['page_no'] = "1";
             $param['records_per_page'] = "12";
-            $param['site_name'] = env("APP_SLUG", 'daimler-trucks-somerton');
+            $param['site_name'] = env("APP_SLUG", 'daimler-trucks-laverton');
             $param['seller_identifier'] = env('SELLER_IDENTIFIER');
             $param['is_new'] = "true";
             $param['is_demo'] = "true";
@@ -34,14 +34,14 @@ class InventoryController extends Controller
             $location = [];
             $url=config('apiprovider.api.get_inventory_location');
             $param['seller_identifier'] = env("SELLER_IDENTIFIER", '');
-            $param['slug'] = env("APP_SLUG", 'daimler-trucks-somerton');
+            $param['slug'] = env("APP_SLUG", 'daimler-trucks-laverton');
             $locationData=APIHelper::sendGuzzleRequest($url, 'get',$param);
             /* if($locationData) {
                 $locationData = $locationData->locations;
             } */
             $makeData = [];
             $url=config('apiprovider.api.get_make_data');
-            // $param['availability'] = 'used-trucks';//env("APP_SLUG", 'daimler-trucks-somerton');
+            // $param['availability'] = 'used-trucks';//env("APP_SLUG", 'daimler-trucks-laverton');
             $param=[];
             $param['seller_identifier'] = env('SELLER_IDENTIFIER');
             $makeData=APIHelper::sendGuzzleRequest($url, 'get',$param);
@@ -62,7 +62,7 @@ class InventoryController extends Controller
             $siteData = [];
             $url=config('apiprovider.api.get_social_media');
             $param=[];
-            $param['slug'] = env("APP_LOCATION_SLUG", 'somerton');
+            $param['slug'] = env("APP_LOCATION_SLUG", 'truganina');
             $siteData=APIHelper::sendGuzzleRequest($url, 'get',$param);       
         } catch (ClientException $e) {
             $response = $e->getResponse();
@@ -83,7 +83,7 @@ class InventoryController extends Controller
             $param = array();
             $param['page_no'] = "1";
             $param['records_per_page'] = "12";
-            $param['site_name'] = env("APP_SLUG", 'daimler-trucks-somerton');
+            $param['site_name'] = env("APP_SLUG", 'daimler-trucks-laverton');
             $param['seller_identifier'] = env('SELLER_IDENTIFIER');
             $is_new=false;
             $is_demo=false;
@@ -111,7 +111,7 @@ class InventoryController extends Controller
                                 
             }
             else {
-                $param['site_name'] = env("APP_SLUG", 'daimler-trucks-milperra');
+                $param['site_name'] = env("APP_SLUG", 'daimler-trucks-laverton');
             }
             if($request->has('location')) {
                 $location=$request->input('location');
@@ -186,7 +186,7 @@ class InventoryController extends Controller
             // $location = [];
             $url=config('apiprovider.api.get_inventory_location');
             $param['seller_identifier'] = env("SELLER_IDENTIFIER", '');
-            $param['slug'] = env("APP_SLUG", 'daimler-trucks-somerton');
+            $param['slug'] = env("APP_SLUG", 'daimler-trucks-laverton');
             $locationData=APIHelper::sendGuzzleRequest($url, 'get',$param);
             /* if($locationData) {
                 $locationData = $locationData->locations;
@@ -236,7 +236,7 @@ class InventoryController extends Controller
             $siteData = [];
             $url=config('apiprovider.api.get_social_media');
             $param=[];
-            $param['slug'] = env("APP_LOCATION_SLUG", 'somerton');
+            $param['slug'] = env("APP_LOCATION_SLUG", 'truganina');
             $siteData=APIHelper::sendGuzzleRequest($url, 'get',$param);
             if($request->has('price_sort')) {
                 $sortField="price_sort";
@@ -278,14 +278,14 @@ class InventoryController extends Controller
             $param['is_new'] = "true";
             $param['page_no'] = "1";
             $param['records_per_page'] = "12";
-            $param['site_name'] = env("APP_SLUG", 'daimler-trucks-somerton');
+            $param['site_name'] = env("APP_SLUG", 'daimler-trucks-laverton');
             $param['seller_identifier'] = env('SELLER_IDENTIFIER');
             $inventory=APIHelper::sendGuzzleRequest($url, 'get',$param);
             //dd($inventory);
             $location = [];
             $url=config('apiprovider.api.get_inventory_location');
             $param['seller_identifier'] = env("SELLER_IDENTIFIER", '');
-            $param['slug'] = env("APP_SLUG", 'daimler-trucks-somerton');
+            $param['slug'] = env("APP_SLUG", 'daimler-trucks-laverton');
             $locationData=APIHelper::sendGuzzleRequest($url, 'get',$param);
             /* if($locationData) {
                 $locationData = $locationData->locations;
@@ -312,7 +312,7 @@ class InventoryController extends Controller
             $siteData = [];
             $url=config('apiprovider.api.get_social_media');
             $param=[];
-            $param['slug'] = env("APP_LOCATION_SLUG", 'somerton');
+            $param['slug'] = env("APP_LOCATION_SLUG", 'truganina');
             $siteData=APIHelper::sendGuzzleRequest($url, 'get',$param);       
         } catch (ClientException $e) {
             $response = $e->getResponse();
@@ -329,7 +329,7 @@ class InventoryController extends Controller
             $url=config('apiprovider.api.get_inventory');
             $param = array();
             $param['slug'] = $slug;
-            $param['site_name'] = env("APP_SLUG", 'daimler-trucks-somerton');
+            $param['site_name'] = env("APP_SLUG", 'daimler-trucks-laverton');
             $param['seller_identifier'] = env('SELLER_IDENTIFIER');
             $inventory=APIHelper::sendGuzzleRequest($url, 'get',$param);
             if(!(isset($inventory) && isset($inventory->content) && isset($inventory->content->id))) {
@@ -338,7 +338,7 @@ class InventoryController extends Controller
             $siteData = [];
             $url=config('apiprovider.api.get_social_media');
             $param=[];
-            $param['slug'] = env("APP_LOCATION_SLUG", 'somerton');
+            $param['slug'] = env("APP_LOCATION_SLUG", 'truganina');
             $siteData=APIHelper::sendGuzzleRequest($url, 'get',$param);
             $locationDetailsArr = APIHelper::getSiteWiseLocationDepartments();
         } catch (ClientException $e) {
@@ -361,13 +361,13 @@ class InventoryController extends Controller
             $param['is_demo'] = "true";
             $param['page_no'] = "1";
             $param['records_per_page'] = "12";
-            $param['site_name'] = env("APP_SLUG", 'daimler-trucks-somerton');
+            $param['site_name'] = env("APP_SLUG", 'daimler-trucks-laverton');
             $param['seller_identifier'] = env('SELLER_IDENTIFIER');
             $inventory=APIHelper::sendGuzzleRequest($url, 'get',$param);
             $location = [];
             $url=config('apiprovider.api.get_inventory_location');
             $param['seller_identifier'] = env("SELLER_IDENTIFIER", '');
-            $param['slug'] = env("APP_SLUG", 'daimler-trucks-somerton');
+            $param['slug'] = env("APP_SLUG", 'daimler-trucks-laverton');
             $locationData=APIHelper::sendGuzzleRequest($url, 'get',$param);
             /* if($locationData) {
                 $locationData = $locationData->locations;
@@ -394,7 +394,7 @@ class InventoryController extends Controller
             $siteData = [];
             $url=config('apiprovider.api.get_social_media');
             $param=[];
-            $param['slug'] = env("APP_LOCATION_SLUG", 'somerton');
+            $param['slug'] = env("APP_LOCATION_SLUG", 'truganina');
             $siteData=APIHelper::sendGuzzleRequest($url, 'get',$param);       
         } catch (ClientException $e) {
             $response = $e->getResponse();
@@ -411,7 +411,7 @@ class InventoryController extends Controller
             $url=config('apiprovider.api.get_inventory');
             $param = array();
             $param['slug'] = $slug;
-            $param['site_name'] = env("APP_SLUG", 'daimler-trucks-somerton');
+            $param['site_name'] = env("APP_SLUG", 'daimler-trucks-laverton');
             $param['seller_identifier'] = env('SELLER_IDENTIFIER');
             $inventory=APIHelper::sendGuzzleRequest($url, 'get',$param);
             if(!(isset($inventory) && isset($inventory->content) && isset($inventory->content->id))) {
@@ -420,7 +420,7 @@ class InventoryController extends Controller
             $siteData = [];
             $url=config('apiprovider.api.get_social_media');
             $param=[];
-            $param['slug'] = env("APP_LOCATION_SLUG", 'somerton');
+            $param['slug'] = env("APP_LOCATION_SLUG", 'truganina');
             $siteData=APIHelper::sendGuzzleRequest($url, 'get',$param);
             $locationDetailsArr = APIHelper::getSiteWiseLocationDepartments();
         } catch (ClientException $e) {
@@ -443,7 +443,7 @@ class InventoryController extends Controller
             $param['is_used'] = "true";
             $param['page_no'] = "1";
             $param['records_per_page'] = "12";
-            // $param['site_name'] = env("APP_SLUG", 'daimler-trucks-somerton');
+            // $param['site_name'] = env("APP_SLUG", 'daimler-trucks-laverton');
             $param['seller_identifier'] = env('SELLER_IDENTIFIER');
             $inventory=APIHelper::sendGuzzleRequest($url, 'get',$param);
             if(sizeof($inventory->content) == 0)
@@ -456,7 +456,7 @@ class InventoryController extends Controller
             $url=config('apiprovider.api.get_inventory_location');
             $param['seller_identifier'] = env("SELLER_IDENTIFIER", '');
             $param['inventory_type'] = 'used';
-            $param['slug'] = env("APP_SLUG", 'daimler-trucks-somerton');
+            $param['slug'] = env("APP_SLUG", 'daimler-trucks-laverton');
             $locationData=APIHelper::sendGuzzleRequest($url, 'get',$param);
             /* if($locationData) {
                 $locationData = $locationData->locations;
@@ -483,7 +483,7 @@ class InventoryController extends Controller
             $siteData = [];
             $url=config('apiprovider.api.get_social_media');
             $param=[];
-            $param['slug'] = env("APP_LOCATION_SLUG", 'somerton');
+            $param['slug'] = env("APP_LOCATION_SLUG", 'truganina');
             $siteData=APIHelper::sendGuzzleRequest($url, 'get',$param);       
         } catch (ClientException $e) {
             $response = $e->getResponse();
@@ -500,7 +500,7 @@ class InventoryController extends Controller
             $url=config('apiprovider.api.get_inventory');
             $param = array();
             $param['slug'] = $slug;
-            // $param['site_name'] = env("APP_SLUG", 'daimler-trucks-somerton');
+            // $param['site_name'] = env("APP_SLUG", 'daimler-trucks-laverton');
             $param['seller_identifier'] = env('SELLER_IDENTIFIER');
             $inventory=APIHelper::sendGuzzleRequest($url, 'get',$param);
             if(!(isset($inventory) && isset($inventory->content) && isset($inventory->content->id))) {
@@ -509,7 +509,7 @@ class InventoryController extends Controller
             $siteData = [];
             $url=config('apiprovider.api.get_social_media');
             $param=[];
-            $param['slug'] = env("APP_LOCATION_SLUG", 'somerton');
+            $param['slug'] = env("APP_LOCATION_SLUG", 'truganina');
             $siteData=APIHelper::sendGuzzleRequest($url, 'get',$param);
             $locationDetailsArr = APIHelper::getSiteWiseLocationDepartments();
         } catch (ClientException $e) {
@@ -531,17 +531,17 @@ class InventoryController extends Controller
             // $param['page_no'] = "1";
             // $param['records_per_page'] = "12";
             // $param['featured'] = "1";
-            // $param['site_name'] = env("APP_SLUG", 'daimler-trucks-somerton');
+            // $param['site_name'] = env("APP_SLUG", 'daimler-trucks-laverton');
             // $param['seller_identifier'] = env('SELLER_IDENTIFIER');
             $url=config('apiprovider.api.get_factory_offers');
             $param['offer_type'] = "local";
-            $param['site_slug'] = env("APP_SLUG", 'daimler-trucks-somerton');;
+            $param['site_slug'] = env("APP_SLUG", 'daimler-trucks-laverton');;
             $special=APIHelper::sendGuzzleRequest($url, 'get',$param); 
             $locationDetailsArr = APIHelper::getSiteWiseLocationDepartments();
             $siteData = [];
             $url=config('apiprovider.api.get_social_media');
             $param=[];
-            $param['slug'] = env("APP_LOCATION_SLUG", 'somerton');
+            $param['slug'] = env("APP_LOCATION_SLUG", 'truganina');
             $siteData=APIHelper::sendGuzzleRequest($url, 'get',$param);       
         } catch (ClientException $e) {
             $response = $e->getResponse();
@@ -568,11 +568,11 @@ class InventoryController extends Controller
             $siteData = [];
             $url=config('apiprovider.api.get_social_media');
             $param=[];
-            $param['slug'] = env("APP_LOCATION_SLUG", 'somerton');
+            $param['slug'] = env("APP_LOCATION_SLUG", 'truganina');
             $siteData=APIHelper::sendGuzzleRequest($url, 'get',$param);
             $url=config('apiprovider.api.get_factory_offers');
             $param['offer_type'] = "factory";
-            $param['site_slug'] = env("APP_SLUG", 'daimler-trucks-somerton');;
+            $param['site_slug'] = env("APP_SLUG", 'daimler-trucks-laverton');;
             $offersData=APIHelper::sendGuzzleRequest($url, 'get',$param);
             $brands = array();
             $freightliner = array();
@@ -614,13 +614,13 @@ class InventoryController extends Controller
             'subbrand_slug'=>$subbrand_slug,
             'subsubbrand_slug'=>$subsubbrand_slug
         ];
-        // 'site_slug'=> env("APP_SLUG", 'daimler-trucks-somerton')
+        // 'site_slug'=> env("APP_SLUG", 'daimler-trucks-laverton')
         //print_r($param);exit;
         $response = APIHelper::sendGuzzleRequest($url, 'post',$param);
         $siteData = [];
         $url=config('apiprovider.api.get_social_media');
         $param=[];
-        $param['slug'] = env("APP_LOCATION_SLUG", 'somerton');
+        $param['slug'] = env("APP_LOCATION_SLUG", 'truganina');
         $siteData=APIHelper::sendGuzzleRequest($url, 'get',$param);
         $locationDetailsArr = APIHelper::getSiteWiseLocationDepartments();
         //echo "<pre>"; print_r($response);exit;
@@ -631,7 +631,7 @@ class InventoryController extends Controller
             $siteData = [];
             $url=config('apiprovider.api.get_social_media');
             $param=[];
-            $param['slug'] = env("APP_LOCATION_SLUG", 'somerton');
+            $param['slug'] = env("APP_LOCATION_SLUG", 'truganina');
             $siteData=APIHelper::sendGuzzleRequest($url, 'get',$param);
             $engineData = [];
             $url=config('apiprovider.api.get_engine_transmission_data');
@@ -649,7 +649,7 @@ class InventoryController extends Controller
             $siteData = [];
             $url=config('apiprovider.api.get_social_media');
             $param=[];
-            $param['slug'] = env("APP_LOCATION_SLUG", 'somerton');
+            $param['slug'] = env("APP_LOCATION_SLUG", 'truganina');
             $siteData=APIHelper::sendGuzzleRequest($url, 'get',$param);
             $transmissionsData = [];
             $url=config('apiprovider.api.get_engine_transmission_data');

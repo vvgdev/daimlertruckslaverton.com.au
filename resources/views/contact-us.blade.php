@@ -1,5 +1,8 @@
-@extends('layouts.app')
-
+@extends('layouts.app1')
+@section('title') Truck Dealerships Melbourne | Truck Dealers VIC @stop
+@section('meta_title') Truck Dealerships Melbourne | Truck Dealers VIC @stop
+@section('meta_keywords') Contact Us - Daimler Trucks Laverton @stop
+@section('meta_description') Welcome to Daimler Trucks Laverton, please find below information about our business including contact details and e-mail information. @stop
 @section('content')
 
 <section class="middle-section">

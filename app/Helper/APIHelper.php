@@ -52,7 +52,7 @@ class APIHelper {
             $locationDetailsArr = [];
             $url = config('apiprovider.api.get_location_details_by_slug');
             $param = array();
-            $param['slug'] = env("APP_SLUG", 'daimler-trucks-somerton');
+            $param['slug'] = env("APP_SLUG", 'daimler-trucks-laverton');
             if(isset($departmentName) && !empty($departmentName)) {
                 $param['department_name'] = $departmentName;
             }

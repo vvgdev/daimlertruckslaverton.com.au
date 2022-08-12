@@ -1,5 +1,20 @@
-@extends('layouts.app')
+@extends('layouts.app1')
 
+@php($vehicleType = null)
+@if((isset($is_new) && $is_new))
+    @php($vehicleType .= isset($vehicleType) ? " & New" : "New")
+@endif
+@if((isset($is_demo) && $is_demo))
+    @php($vehicleType .= isset($vehicleType) ? " & Demo" : "Demo")
+@endif
+@if((isset($is_used) && $is_used))
+    @php($vehicleType .= isset($vehicleType) ? " & Used" : "Used")
+@endif
+
+@section('title') New,Demo & Used Truck Sales North Melbourne VIC - {{$vehicleType}} Trucks @stop
+@section('meta_title') New,Demo & Used Truck Sales North Melbourne VIC - {{$vehicleType}} Trucks @stop
+@section('meta_keywords') Laverton {{$vehicleType}} Trucks @stop
+@section('meta_description') Looking for your next Truck Online? Visit Daimler Trucks Laverton for all of your commercial vehicle and owner-driver requirements. Massive range of stock to suit all uses available to test drive today! - {{$vehicleType}} Trucks @stop
 @section('content')
 
 <section class="middle-section">
@@ -23,17 +38,7 @@
                         <div class="filter-box">
                             <form  id="filterform" method="POST" action="{{ route('filter.stock') }}">
                                 @csrf
-
-                                @php($vehicleType = null)
-                                @if((isset($is_new) && $is_new))
-                                    @php($vehicleType .= isset($vehicleType) ? " & New" : "New")
-                                @endif
-                                @if((isset($is_demo) && $is_demo))
-                                    @php($vehicleType .= isset($vehicleType) ? " & Demo" : "Demo")
-                                @endif
-                                @if((isset($is_used) && $is_used))
-                                    @php($vehicleType .= isset($vehicleType) ? " & Used" : "Used")
-                                @endif
+                                
                                 @if((isset($is_used) && $is_used) && (isset($is_demo) && $is_demo) && (isset($is_new) && $is_new))
                                 @elseif(isset($vehicleType) && !empty($vehicleType))
                                     <strong class="filter-title">{{$vehicleType}} Trucks</strong>
@@ -236,7 +241,7 @@
                                                 <input type="hidden" id="sortoption" name="" value="" />
                                             @endif
                                             <input type="hidden" id="switch_value" name="switch_value" value="false" />
-                                            <input type="hidden" id="site_slug" name="site_slug" value="{{env('APP_SLUG', 'daimler-trucks-somerton')}}" />
+                                            <input type="hidden" id="site_slug" name="site_slug" value="{{env('APP_SLUG', 'daimler-trucks-laverton')}}" />
                                             <input type="submit" value="Search" class="btn btn-red-small"/>
                                         </div>
                                     </div>

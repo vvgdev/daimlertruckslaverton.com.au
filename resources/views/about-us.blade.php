@@ -1,5 +1,8 @@
-@extends('layouts.app')
-
+@extends('layouts.app1')
+@section('title') About Truck Dealers Melbourne | Sales, Service Parts | Daimler Trucks Laverton @stop
+@section('meta_title') About Truck Dealers Melbourne | Sales, Service Parts | Daimler Trucks Laverton @stop
+@section('meta_keywords') About Us - Daimler Trucks Laverton @stop
+@section('meta_description') Daimler Trucks Laverton is one of Australia’s largest dealerships and is located close to Melbourne City. @stop
 @section('content')
 <section class="middle-section">
     <!--Internal Banner-->

@@ -1,5 +1,8 @@
-@extends('layouts.app')
-
+@extends('layouts.app1')
+@section('title') Latest News - Daimler Trucks Laverton @stop
+@section('meta_title') Latest News - Daimler Trucks Laverton @stop
+@section('meta_keywords') Latest News - Daimler Trucks Laverton @stop
+@section('meta_description') Looking for your next truck in Melbourne. Visit the team at Daimler Trucks Laverton for all of your commercial vehicle requirements, including Sales Service & Parts! @stop
 @section('content')
 <section class="middle-section">
     <!--Internal Banner-->
@@ -139,7 +142,7 @@
                                 <input type="hidden" id="page_no" name="page_no" value="1">
                                 <input type="hidden" id="records_per_page" name="records_per_page" value="14">
                                 <div id="loadmorenews" class="btn btn-red-small full-width mt-3 btnload-more" onclick="LoadMoreNews()">Load More News</div>
-                                <input type="hidden" id="site_slug" name="site_slug" value="{{env('APP_SLUG', 'daimler-trucks-somerton')}}" />
+                                <input type="hidden" id="site_slug" name="site_slug" value="{{env('APP_SLUG', 'daimler-trucks-laverton')}}" />
                             @endif
                         @else
                                 <p>News data not available</p>

@@ -15,7 +15,7 @@ class PartsController extends Controller {
             $siteData = [];
             $url=config('apiprovider.api.get_social_media');
             $param=[];
-            $param['slug'] = env("APP_LOCATION_SLUG", 'somerton');
+            $param['slug'] = env("APP_LOCATION_SLUG", 'truganina');
             $siteData=APIHelper::sendGuzzleRequest($url, 'get',$param);
         } catch (ClientException $e) {
             $response = $e->getResponse();
@@ -31,7 +31,7 @@ class PartsController extends Controller {
             $flyerData=[];
             $url=config('apiprovider.api.get_flyer');
             $param['flyer_type'] = "parts";
-            $param['site_slug'] = env("APP_SLUG", 'daimler-trucks-somerton');;
+            $param['site_slug'] = env("APP_SLUG", 'daimler-trucks-laverton');;
             $flyerData=APIHelper::sendGuzzleRequest($url, 'get',$param);
             $brands = array();
             $freightliner = array();
@@ -57,7 +57,7 @@ class PartsController extends Controller {
             $siteData = [];
             $url=config('apiprovider.api.get_social_media');
             $param=[];
-            $param['slug'] = env("APP_LOCATION_SLUG", 'somerton');
+            $param['slug'] = env("APP_LOCATION_SLUG", 'truganina');
             $siteData=APIHelper::sendGuzzleRequest($url, 'get',$param);
         } catch (ClientException $e) {
             $response = $e->getResponse();

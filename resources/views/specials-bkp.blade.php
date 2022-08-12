@@ -342,7 +342,7 @@
                 </div> --}}
             </div>
             <div class="mt-2 mb-2">
-                <input type="hidden" id="site_slug" name="site_slug" value="{{env('APP_SLUG', 'daimler-trucks-somerton')}}" />
+                <input type="hidden" id="site_slug" name="site_slug" value="{{env('APP_SLUG', 'daimler-trucks-laverton')}}" />
                 @if(isset($specials) && isset($specials->totalRecords) && $specials->totalRecords>10)
                     <input type="hidden" id="page_no" name="page_no" value="1">
                     <input type="hidden" id="records_per_page" name="records_per_page" value="10">

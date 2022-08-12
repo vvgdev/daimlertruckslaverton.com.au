@@ -14,7 +14,7 @@ class CompanyController extends Controller {
             $siteData = [];
             $url=config('apiprovider.api.get_social_media');
             $param=[];
-            $param['slug'] = env("APP_LOCATION_SLUG", 'somerton');
+            $param['slug'] = env("APP_LOCATION_SLUG", 'truganina');
             $siteData=APIHelper::sendGuzzleRequest($url, 'get',$param);
         } catch (ClientException $e) {
             $response = $e->getResponse();
@@ -29,7 +29,7 @@ class CompanyController extends Controller {
             $siteData = [];
             $url=config('apiprovider.api.get_social_media');
             $param=[];
-            $param['slug'] = env("APP_LOCATION_SLUG", 'somerton');
+            $param['slug'] = env("APP_LOCATION_SLUG", 'truganina');
             $siteData=APIHelper::sendGuzzleRequest($url, 'get',$param);
         } catch (ClientException $e) {
             $response = $e->getResponse();
@@ -44,12 +44,12 @@ class CompanyController extends Controller {
             $locationDetailsArr = [];
             $ourTeam = [];
             $url=config('apiprovider.api.get_meet_our_team');
-            $param['location_slug'] = env("APP_LOCATION_SLUG", 'somerton');
+            $param['location_slug'] = env("APP_LOCATION_SLUG", 'truganina');
             $ourTeam=APIHelper::sendGuzzleRequest($url, 'get',$param);
             $siteData = [];
             $url=config('apiprovider.api.get_social_media');
             $param=[];
-            $param['slug'] = env("APP_LOCATION_SLUG", 'somerton');
+            $param['slug'] = env("APP_LOCATION_SLUG", 'truganina');
             $siteData=APIHelper::sendGuzzleRequest($url, 'get',$param);
         } catch (ClientException $e) {
             $response = $e->getResponse();
@@ -64,7 +64,7 @@ class CompanyController extends Controller {
             $siteData = [];
             $url=config('apiprovider.api.get_social_media');
             $param=[];
-            $param['slug'] = env("APP_LOCATION_SLUG", 'somerton');
+            $param['slug'] = env("APP_LOCATION_SLUG", 'truganina');
             $siteData=APIHelper::sendGuzzleRequest($url, 'get',$param);
         } catch (ClientException $e) {
             $response = $e->getResponse();
@@ -78,7 +78,7 @@ class CompanyController extends Controller {
             $siteData = [];
             $url=config('apiprovider.api.get_social_media');
             $param=[];
-            $param['slug'] = env("APP_LOCATION_SLUG", 'somerton');
+            $param['slug'] = env("APP_LOCATION_SLUG", 'truganina');
             $siteData=APIHelper::sendGuzzleRequest($url, 'get',$param);
         } catch (ClientException $e) {
             $response = $e->getResponse();
@@ -91,7 +91,7 @@ class CompanyController extends Controller {
             $siteData = [];
             $url=config('apiprovider.api.get_social_media');
             $param=[];
-            $param['slug'] = env("APP_LOCATION_SLUG", 'somerton');
+            $param['slug'] = env("APP_LOCATION_SLUG", 'truganina');
             $siteData=APIHelper::sendGuzzleRequest($url, 'get',$param);
         } catch (ClientException $e) {
             $response = $e->getResponse();

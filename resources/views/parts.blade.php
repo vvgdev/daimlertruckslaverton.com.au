@@ -1,5 +1,8 @@
-@extends('layouts.app')
-
+@extends('layouts.app1')
+@section('title') Truck Parts Melbourne | Daimler Truck & Bus Parts VIC @stop
+@section('meta_title') Truck Parts Melbourne | Daimler Truck & Bus Parts VIC @stop
+@section('meta_keywords') Parts - Daimler Trucks Laverton @stop
+@section('meta_description') The Daimler Trucks Laverton Parts Centre supplies genuine Mercedes-Benz, Freightliner and Fuso parts for trucks, buses and vans. Anything you need, we have. @stop
 @section('content')
 
 <section class="middle-section">

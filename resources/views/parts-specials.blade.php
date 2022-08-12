@@ -1,5 +1,8 @@
-@extends('layouts.app')
-
+@extends('layouts.app1')
+@section('title') Truck Parts Specials Melbourne | Daimler Parts For Sale VIC @stop
+@section('meta_title') Truck Parts Specials Melbourne | Daimler Parts For Sale VIC @stop
+@section('meta_keywords') Parts Specials - Daimler Trucks Laverton @stop
+@section('meta_description') We are your one stop shop for truck parts in VIC. We stock a huge range of truck parts and accessories, as well as some great Daimler merchandise. @stop
 @section('content')
 
 <section class="middle-section">

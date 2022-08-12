@@ -1,5 +1,8 @@
-@extends('layouts.app')
-
+@extends('layouts.app1')
+@section('title') Service Plans - Daimler Trucks Laverton @stop
+@section('meta_title') WarrService Plansanty - Daimler Trucks Laverton @stop
+@section('meta_keywords') Service Plans - Daimler Trucks Laverton @stop
+@section('meta_description') Service Plans - Daimler Trucks Laverton @stop
 @section('content')
 <section class="middle-section">
     <!--Internal Banner-->

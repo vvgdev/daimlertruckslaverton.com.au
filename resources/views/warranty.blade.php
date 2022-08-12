@@ -1,5 +1,8 @@
-@extends('layouts.app')
-
+@extends('layouts.app1')
+@section('title') Warranty - Daimler Trucks Laverton @stop
+@section('meta_title') Warranty - Daimler Trucks Laverton @stop
+@section('meta_keywords') Warranty - Daimler Trucks Laverton @stop
+@section('meta_description') Warranty - Daimler Trucks Laverton @stop
 @section('content')
 <section class="middle-section">
     <!--Internal Banner-->

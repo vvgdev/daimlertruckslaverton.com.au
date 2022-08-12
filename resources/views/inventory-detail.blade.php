@@ -1,5 +1,8 @@
-@extends('layouts.app')
-
+@extends('layouts.app1')
+@section('title') {{$inventory->specification_title}} - Daimler Trucks Laverton @stop
+@section('meta_title') {{$inventory->specification_title}} - Daimler Trucks Laverton @stop
+@section('meta_keywords') {{$inventory->specification_title}} - Daimler Trucks Laverton @stop
+@section('meta_description') {{$inventory->specification_title}}. Review latest price & specifications of {{$inventory->listing_type}} trucks for sale today at {{$inventory->seller_name}}. @stop
 @section('content')
 
 <section class="middle-section">

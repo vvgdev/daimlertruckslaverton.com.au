@@ -1,5 +1,8 @@
-@extends('layouts.app')
-
+@extends('layouts.app1')
+@section('title') Roadside Assistance - Daimler Trucks Laverton @stop
+@section('meta_title') Roadside Assistance - Daimler Trucks Laverton @stop
+@section('meta_keywords') Roadside Assistance - Daimler Trucks Laverton @stop
+@section('meta_description') Roadside Assistance - Daimler Trucks Laverton @stop
 @section('content')
 <section class="middle-section">
     <!--Internal Banner-->

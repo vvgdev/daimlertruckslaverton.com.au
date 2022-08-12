@@ -27,7 +27,7 @@ class NewsController extends Controller {
                     $param['post_filter'] = $year;
                 }
             }
-            $param['site_slug'] = env("APP_SLUG", 'daimler-trucks-somerton');
+            $param['site_slug'] = env("APP_SLUG", 'daimler-trucks-laverton');
             $param['page_no'] = "1";
             $param['records_per_page'] = "14";
             $newsArr = APIHelper::sendGuzzleRequest($url, 'get', $param);
@@ -36,7 +36,7 @@ class NewsController extends Controller {
             $siteData = [];
             $url=config('apiprovider.api.get_social_media');
             $param=[];
-            $param['slug'] = env("APP_LOCATION_SLUG", 'somerton');
+            $param['slug'] = env("APP_LOCATION_SLUG", 'truganina');
             $siteData=APIHelper::sendGuzzleRequest($url, 'get',$param);
         } catch (ClientException $e) {
             $response = $e->getResponse();
@@ -52,13 +52,13 @@ class NewsController extends Controller {
             $newsArr = [];
             $url = config('apiprovider.api.get_recent_deliveries');
             $param = array();
-            $param['site_slug'] = env("APP_SLUG", 'daimler-trucks-somerton');
+            $param['site_slug'] = env("APP_SLUG", 'daimler-trucks-laverton');
             $recentDeliveries = APIHelper::sendGuzzleRequest($url, 'get', $param);
             $recentDeliveries = collect($recentDeliveries)->sortByDesc(strtotime('recent_delivery_date'));
             $siteData = [];
             $url=config('apiprovider.api.get_social_media');
             $param=[];
-            $param['slug'] = env("APP_LOCATION_SLUG", 'somerton');
+            $param['slug'] = env("APP_LOCATION_SLUG", 'truganina');
             $siteData=APIHelper::sendGuzzleRequest($url, 'get',$param);
         } catch (ClientException $e) {
             $response = $e->getResponse();
@@ -72,14 +72,14 @@ class NewsController extends Controller {
             $newsArr = [];
             $url = config('apiprovider.api.get_news');
             $param = array();
-            $param['site_slug'] = env("APP_SLUG", 'daimler-trucks-somerton');
+            $param['site_slug'] = env("APP_SLUG", 'daimler-trucks-laverton');
             $param['slug'] = $slug;
             $newsArr = APIHelper::sendGuzzleRequest($url, 'get', $param);
             //dd($newsArr);
             $siteData = [];
             $url=config('apiprovider.api.get_social_media');
             $param=[];
-            $param['slug'] = env("APP_LOCATION_SLUG", 'somerton');
+            $param['slug'] = env("APP_LOCATION_SLUG", 'truganina');
             $siteData=APIHelper::sendGuzzleRequest($url, 'get',$param);
         } catch (ClientException $e) {
             $response = $e->getResponse();

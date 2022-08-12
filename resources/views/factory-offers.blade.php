@@ -1,5 +1,8 @@
-@extends('layouts.app')
-
+@extends('layouts.app1')
+@section('title') Factory Offers - Daimler Trucks Laverton @stop
+@section('meta_title') Factory Offers - Daimler Trucks Laverton @stop
+@section('meta_keywords') Factory Offers - Daimler Trucks Laverton @stop
+@section('meta_description') Factory Offers - Daimler Trucks Laverton @stop
 @section('content')
 <section class="middle-section">
     <!--Internal Banner-->

@@ -1,5 +1,8 @@
-@extends('layouts.app')
-
+@extends('layouts.app1')
+@section('title') Engines - Daimler Trucks Laverton @stop
+@section('meta_title') Engines - Daimler Trucks Laverton @stop
+@section('meta_keywords') Engines - Daimler Trucks Laverton @stop
+@section('meta_description') Engines - Daimler Trucks Laverton @stop
 @section('content')
 
 <section class="middle-section">

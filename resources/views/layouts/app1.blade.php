@@ -3,11 +3,11 @@
     <head>
         <meta charset="utf-8">
         <meta name="facebook-domain-verification" content="nk61y0pixd52qxfdchfc6z5otn3529" />
-        <title>Truck Sales Melbourne | Daimler Truck Sales, Service & Parts VIC - Daimler Trucks Laverton</title>
+        <title>@yield('title','A default title')</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="{{ $locationDetails[0]->meta_description }}">
-        <meta name="title" content="{{ $locationDetails[0]->meta_title }}">
-        <meta name="keywords" content="{{ $locationDetails[0]->meta_keywords }}">
+        <meta name="title" content="@yield('meta_title','Daimler Trucks Laverton')">
+        <meta name="keywords" content="@yield('meta_keywords','Daimler Trucks Laverton')">
+        <meta name="description" content="@yield('meta_description','Daimler Trucks Laverton')">
         <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
         <script src="/js/jquery-3.2.1.min.js"></script>
         <script src="/js/event-tracking.js"></script>
@@ -29,7 +29,27 @@
 
             gtag('config', 'G-R85X6RDKLT');
         </script>
-        {!! $locationDetails[0]->schema_markup !!}
+        <script type="application/ld+json">
+            {
+                "@context": "http://schema.org/",
+                "@type": "AutoDealer",
+                "name": "Daimler Trucks Laverton",
+                "description": "Looking for your next truck in Melbourne. Visit the team at Daimler Trucks Laverton for all of your commercial vehicle requirements, including Sales Service & Parts!",
+                "image": "https://www.daimlertruckslaverton.com.au/images/daimlertrucks_laverton_logo.jpeg",
+                "url": "http://www.daimlertruckslaverton.com.au",
+                "logo": "https://www.daimlertruckslaverton.com.au/images/daimlertrucks_laverton_logo.jpeg",
+                "sameAs": ["https://www.facebook.com/DTLaverton/", "https://www.instagram.com/daimlertruckslaverton/", "https://www.linkedin.com/company/daimler-trucks-laverton/"],
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "Truganina",
+                    "addressRegion": "VIC",
+                    "postalCode": "3029",
+                    "streetAddress": "423 Boundary Road"
+                },
+                "telephone": "(03) 9680 8777",
+                "openingHours": ["Mo-Fr 8:00-18:00", "Sa 8:00-12:00"]
+            }
+        </script>
     </head>
     <body>
         @include('partials.header')

@@ -1,5 +1,8 @@
-@extends('layouts.app')
-
+@extends('layouts.app1')
+@section('title') {{$newsData->news[0]->news_title}} - Daimler Trucks Laverton @stop
+@section('meta_title') {{$newsData->news[0]->news_title}} - Daimler Trucks Laverton @stop
+@section('meta_keywords') {{$newsData->news[0]->news_title}} - Daimler Trucks Laverton @stop
+@section('meta_description') {{$newsData->news[0]->news_title}} - Daimler Trucks Laverton @stop
 @section('content')
 
 <section class="middle-section">
