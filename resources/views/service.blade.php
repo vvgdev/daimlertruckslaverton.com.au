@@ -59,7 +59,7 @@
                                     
                                     <h6 class="mt-4">Quick, easy and inexpensive repairs.</h6>
                                     <p>Making sure that your Mercedes-Benz truck, or your entire Mercedes-Benz truck fleet, remains in optimum operating condition is the key.</p>
-                                    <p>Whether you need a larger repair, like a new body panel or have a smaller problem that needs fixing like an annoying rattle, you can trust Daimler Trucks Somerton Mercedes-Benz to take care of it.</p>
+                                    <p>Whether you need a larger repair, like a new body panel or have a smaller problem that needs fixing like an annoying rattle, you can trust Daimler Trucks Laverton Mercedes-Benz to take care of it.</p>
                                     <p>For further information, please contact our friendly Service team for assistance with any enquiry regarding your Mercedes-Benz Trucks vehicle.</p>
                                     <h6 class="mt-4">Customer Amenities</h6>
                                     <p>When you visit Daimler Trucks Laverton for your truck service, we want to ensure your time here is enjoyable. We have the following customer amenities available for your convenience and comfort:</p>

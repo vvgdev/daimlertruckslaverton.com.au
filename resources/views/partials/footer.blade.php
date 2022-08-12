@@ -40,7 +40,7 @@
                                     <a href="/finance" title="Finance">Finance</a>
                                 </li>
                                 <li>
-                                    <a href="https://www.velocitytruckcentres.com.au/privacy-policy" target="_blank" title="Daimler Trucks Somerton Privacy policy">Privacy Policy</a>
+                                    <a href="https://www.velocitytruckcentres.com.au/privacy-policy" target="_blank" title="Daimler Trucks Laverton Privacy policy">Privacy Policy</a>
                                 </li>
                                 <li>
                                     <a href="https://www.velocitytruckcentres.com.au/privacy-policy" target="_blank">Terms &amp; Conditions</a>

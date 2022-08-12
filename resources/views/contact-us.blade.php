@@ -107,7 +107,7 @@
                                 </div>
                                 <div class="custom-checkbox form-group">
                                     <label for="terms" class="checkbox-custom full-width">
-                                        I agree with the website <a href="/disclaimer/">terms of use</a> and that my information will be handled by Daimler Trucks Somerton in accordance with the <a href="https://www.velocitytruckcentres.com.au/privacy-policy">Dealer Privacy Policy</a>.<em class="required">*</em>
+                                        I agree with the website <a href="/disclaimer/">terms of use</a> and that my information will be handled by Daimler Trucks Laverton in accordance with the <a href="https://www.velocitytruckcentres.com.au/privacy-policy">Dealer Privacy Policy</a>.<em class="required">*</em>
                                         <input type="checkbox" id="terms" name="terms" :value=true class="truck-condition"> 
                                         <span class="checkmark"></span>                                        
                                     </label>
@@ -243,7 +243,7 @@
                                 </div>
                                 <div class="custom-checkbox form-group">
                                     <label for="terms1" class="checkbox-custom full-width">
-                                        I agree with the website <a href="/disclaimer/">terms of use</a> and that my information will be handled by Daimler Trucks Somerton in accordance with the <a href="https://www.velocitytruckcentres.com.au/privacy-policy">Dealer Privacy Policy</a>.<em class="required">*</em>
+                                        I agree with the website <a href="/disclaimer/">terms of use</a> and that my information will be handled by Daimler Trucks Laverton in accordance with the <a href="https://www.velocitytruckcentres.com.au/privacy-policy">Dealer Privacy Policy</a>.<em class="required">*</em>
                                         <input type="checkbox" id="terms1" name="terms" :value=true class="truck-condition" > 
                                         <span class="checkmark"></span>
                                     </label>
@@ -474,7 +474,7 @@
                                 </div>
                                 <div class="custom-checkbox form-group">
                                     <label for="terms2" class="checkbox-custom full-width">
-                                        I agree with the website <a href="/disclaimer/">terms of use</a> and that my information will be handled by Daimler Trucks Somerton in accordance with the <a href="https://www.velocitytruckcentres.com.au/privacy-policy">Dealer Privacy Policy</a>.<em class="required">*</em>
+                                        I agree with the website <a href="/disclaimer/">terms of use</a> and that my information will be handled by Daimler Trucks Laverton in accordance with the <a href="https://www.velocitytruckcentres.com.au/privacy-policy">Dealer Privacy Policy</a>.<em class="required">*</em>
                                         <input type="checkbox" id="terms2" name="terms2" :value=true class="truck-condition"> 
                                         <span class="checkmark"></span>
                                     </label>
@@ -597,7 +597,7 @@
                                 </div>
                                 <div class="custom-checkbox form-group">
                                     <label for="terms3" class="checkbox-custom full-width">
-                                        I agree with the website <a href="/disclaimer/">terms of use</a> and that my information will be handled by Daimler Trucks Somerton in accordance with the <a href="https://www.velocitytruckcentres.com.au/privacy-policy">Dealer Privacy Policy</a>.<em class="required">*</em>
+                                        I agree with the website <a href="/disclaimer/">terms of use</a> and that my information will be handled by Daimler Trucks Laverton in accordance with the <a href="https://www.velocitytruckcentres.com.au/privacy-policy">Dealer Privacy Policy</a>.<em class="required">*</em>
                                         <input type="checkbox" id="terms3" name="terms3" :value=true class="truck-condition"> 
                                         <span class="checkmark"></span>
                                     </label>
