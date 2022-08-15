@@ -1,0 +1,90 @@
+@font-face {
+    font-family: 'DTM-Font-Icon';
+    src:  url('../fonts/DTM-Font-Icon.eot?fmo6zd');
+    src:  url('../fonts/DTM-Font-Icon.eot?fmo6zd#iefix') format('embedded-opentype'),
+      url('../fonts/DTM-Font-Icon.ttf?fmo6zd') format('truetype'),
+      url('../fonts/DTM-Font-Icon.woff?fmo6zd') format('woff'),
+      url('../fonts/DTM-Font-Icon.svg?fmo6zd#DTM-Font-Icon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="dtm-"], [class*=" dtm-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'DTM-Font-Icon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  .dtm-mercedes-logo:before {
+    content: "\e910";
+  }
+  .dtm-fuso-logo:before {
+    content: "\e911";
+  }
+  .dtm-icon-error-home:before {
+    content: "\e90f";
+  }
+  .dtm-icon-close-circle:before {
+    content: "\e90e";
+  }
+  .dtm-icon-email:before {
+    content: "\e90b";
+  }
+  .dtm-icon-enquiry:before {
+    content: "\e90c";
+  }
+  .dtm-icon-make-offer:before {
+    content: "\e90d";
+  }
+  .dtm-icon-printer:before {
+    content: "\e900";
+  }
+  .dtm-icon-video:before {
+    content: "\e901";
+  }
+  .dtm-icon-dollar:before {
+    content: "\e902";
+  }
+  .dtm-icon-list:before {
+    content: "\e903";
+  }
+  .dtm-icon-specials:before {
+    content: "\e904";
+  }
+  .dtm-icon-test-drive:before {
+    content: "\e905";
+  }
+  .dtm-icon-thumb:before {
+    content: "\e906";
+  }
+  .dtm-icon-search-sq:before {
+    content: "\e907";
+  }
+  .dtm-icon-calculator:before {
+    content: "\e908";
+  }
+  .dtm-icon-gallery-truck:before {
+    content: "\e909";
+  }
+  .dtm-icon-search:before {
+    content: "\e90a";
+  }
+  .dtm-angle-left:before {
+    content: "\3c";
+  }
+  .dtm-phone-icon:before {
+    content: "\e004";
+  }
+  .dtm-angle-right:before {
+    content: "\3e";
+  }
+  
