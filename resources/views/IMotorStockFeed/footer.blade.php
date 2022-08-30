@@ -130,7 +130,7 @@
                             <a class="company-contact" href="tel:03 9680 8777"><i class="fa fa-phone"></i>03 9680 8777</a>
                             </p>
                             <span class="footer_ham_small_copyright" style="">Copyright © {{ now()->year }} Velocity Truck Centres.</span> 
-                            <span class="footer_ham_small_copyright" style="">LMCT LMCT 11636</span>
+                            <span class="footer_ham_small_copyright" style="">LMCT 11636</span>
                             <a href="https://www.velocitytruckcentres.com.au/"><img class="vtc-logo pull-right pt-4" src="{{env('IMOTOR_URL')}}/images/VTC_Logo_White.png" width="125" height="75"/></a>
                         </div>
                     </div>
