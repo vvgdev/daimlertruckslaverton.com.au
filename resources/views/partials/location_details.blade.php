@@ -55,7 +55,12 @@
                                 @endif
                                 @if(isset($department->main_num) && !empty($department->main_num))
                                     <div class="inner-group">
-                                        <label>Mobile: <b><a href="tel:{{ $department->main_num }}">{{ $department->main_num }}</a></b></label>
+                                        <label>Main number: <b><a href="tel:{{ $department->main_num }}">{{ $department->main_num }}</a></b></label>
+                                    </div>
+                                @endif
+                                @if(isset($department->mobile_num) && !empty($department->mobile_num))
+                                    <div class="inner-group">
+                                        <label>Mobile: <b><a href="tel:{{ $department->mobile_num }}">{{ $department->mobile_num }}</a></b></label>
                                     </div>
                                 @endif
                                 @if(isset($department->contact_form_email) && !empty($department->contact_form_email))
