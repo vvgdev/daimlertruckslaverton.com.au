@@ -41,7 +41,7 @@ class FormValidtionController extends Controller
                 'preferred_pick_up_date'=>'required|date_format:d/m/Y',
                 'preferred_pick_up_time'=>'required|date_format:H:i',
                 'detail'=>'max:1000',
-                'terms'=>'accepted' 
+                'terms2'=>'accepted' 
             ]);
 
             if($validator->fails())
@@ -68,7 +68,7 @@ class FormValidtionController extends Controller
             $param['preferred_pick_up_date'] = $request->input("preferred_pick_up_date");
             $param['preferred_pick_up_time'] = $request->input("preferred_pick_up_time");
             $param['comment'] = $request->input("detail");
-            $param['terms_conditions_check'] = ($request->input("terms") == 'on') ? 1 : 0;
+            $param['terms_conditions_check'] = ($request->input("terms2") == 'on') ? 1 : 0;
             $param['type'] = "service";
             $inventory=APIHelper::sendGuzzleRequest($url, 'post',$param);
             
@@ -103,7 +103,7 @@ class FormValidtionController extends Controller
                 'vehicle_model'=>'required',
                 'rego_number'=>'required|numeric',
                 'detail'=>'required|max:1000',
-                'terms'=>'accepted'
+                'terms1'=>'accepted'
             ]);
 
             if($validator->fails())
@@ -126,7 +126,7 @@ class FormValidtionController extends Controller
             $param['vehicle_model'] = $request->input("vehicle_model");
             $param['rego'] = $request->input("rego_number");
             $param['comment'] = $request->input("detail");
-            $param['terms_conditions_check'] = ($request->input("terms") == 'on') ? 1 : 0;
+            $param['terms_conditions_check'] = ($request->input("terms1") == 'on') ? 1 : 0;
             $param['type'] = "parts";
             $inventory=APIHelper::sendGuzzleRequest($url, 'post',$param);
             
@@ -200,7 +200,7 @@ class FormValidtionController extends Controller
                 'phone'=>'required|digits:10',
                 'amount_required'=>'required',
                 'detail'=>'max:1000',
-                'terms'=>'accepted' 
+                'terms3'=>'accepted' 
             ]);
             
             if($validator->fails())
@@ -221,7 +221,7 @@ class FormValidtionController extends Controller
             $param['amount_required'] = $request->input("amount_required");
             $param['loan_term'] = $request->input("loan_term");
             $param['comment'] = $request->input("detail");
-            $param['terms_conditions_check'] = ($request->input("terms") == 'on') ? 1 : 0;
+            $param['terms_conditions_check'] = ($request->input("terms3") == 'on') ? 1 : 0;
             $param['type'] = "finance";
             $inventory=APIHelper::sendGuzzleRequest($url, 'post',$param);
             

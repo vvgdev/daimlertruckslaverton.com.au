@@ -244,11 +244,11 @@
                                 <div class="custom-checkbox form-group">
                                     <label for="terms1" class="checkbox-custom full-width">
                                         I agree with the website <a href="/disclaimer/">terms of use</a> and that my information will be handled by Daimler Trucks Laverton in accordance with the <a href="https://www.velocitytruckcentres.com.au/privacy-policy">Dealer Privacy Policy</a>.<em class="required">*</em>
-                                        <input type="checkbox" id="terms1" name="terms" :value=true class="truck-condition" > 
+                                        <input type="checkbox" id="terms1" name="terms1" :value=true class="truck-condition" > 
                                         <span class="checkmark"></span>
                                     </label>
                                     @if(session()->has('tab_id') && session()->get('tab_id') == 'parts_tab_id')
-                                        <span class="error">@error('terms'){{$message}}@enderror</span>
+                                        <span class="error">@error('terms1')The terms must be accepted.@enderror</span>
                                     @endif
                                 </div>
                                 <div class="row">
@@ -479,7 +479,7 @@
                                         <span class="checkmark"></span>
                                     </label>
                                     @if(session()->has('tab_id') && session()->get('tab_id') == 'service_tab_id')
-                                        <span class="error">@error('terms'){{$message}}@enderror</span>
+                                        <span class="error">@error('terms2')The terms must be accepted.@enderror</span>
                                     @endif
                                 </div>
                                 <div class="row">
@@ -602,7 +602,7 @@
                                         <span class="checkmark"></span>
                                     </label>
                                     @if(session()->has('tab_id') && session()->get('tab_id') == 'finance_tab_id')
-                                        <span class="error">@error('terms'){{$message}}@enderror</span>
+                                        <span class="error">@error('terms3')The terms must be accepted.@enderror</span>
                                     @endif
                                 </div>
                                 <div class="row">
