@@ -3031,7 +3031,7 @@ header nav .main-nav li .nav-secondary li a{
 .blog-post .title {
     color: #1c355e;
     font-size: 26px;
-    clear: both;
+    /* clear: both; */
     line-height: 38px;
     font-weight: 500;
 }
@@ -3050,11 +3050,13 @@ header nav .main-nav li .nav-secondary li a{
 }
 .blog-post .blog-image{
     margin-bottom: 30px;
+    float: left;
+    margin-right: 30px;
 }
 .blog-post .blog-image img{
     width: 100%;
-    height: 280px;
-    object-fit: cover;
+    /* height: 280px; */
+    object-fit: contain;
     object-position: center;
 }
 /* #endregion */

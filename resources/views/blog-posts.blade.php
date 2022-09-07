@@ -90,7 +90,7 @@
                         @if(isset($newsData->news) && count($newsData->news)>0)
                             @foreach($newsData->news as $news)
                                 <div class="blog-image">
-                                    <img src="{{$news->image}}" alt="{{$news->image_alt}}" style="object-fit: cover;">
+                                    <img src="{{$news->image}}" alt="{{$news->image_alt}}" style="object-fit: contain;">
                                 </div>
                                 <div class="title">{{$news->news_title}}</div>
                                 <div class="blog-tagline">

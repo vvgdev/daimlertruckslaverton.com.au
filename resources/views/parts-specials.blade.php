@@ -47,7 +47,17 @@
                             <div class="content">
                                 @foreach($mercedes_benz as $mb)
                                     <h3>{{$mb->name}}</h3>
-                                    <iframe allowfullscreen allow="fullscreen" style="border:none;width:100%;height:326px;" src="{{$mb->embedded_iframe_src}}"></iframe>
+                                    <hr/>
+                                    <div class="row">
+                                        @if($mb->logo != 'https://www.velocitytruckcentres.com.au/storage/app/media')
+                                            <div class="col-md-6">
+                                                <img class="mb-3" src="{{$mb->logo}}" alt="{{$mb->logo_alt}}">
+                                            </div>
+                                        @endif   
+                                        <div class="col-md-6">
+                                            <iframe allowfullscreen allow="fullscreen" style="border:none;width:100%;height:100%;min-height: 400px;" src="{{$mb->embedded_iframe_src}}"></iframe> 
+                                        </div>
+                                    </div> 
                                 @endforeach
                             </div>    
                         @else
@@ -62,7 +72,17 @@
                             <div class="content">
                                 @foreach($mercedes_benz as $mb)
                                     <h3>{{$mb->name}}</h3>
-                                    <iframe allowfullscreen allow="fullscreen" style="border:none;width:100%;height:326px;" src="{{$mb->embedded_iframe_src}}"></iframe>
+                                    <hr/>
+                                    <div class="row">
+                                        @if($mb->logo != 'https://www.velocitytruckcentres.com.au/storage/app/media')
+                                            <div class="col-md-6">
+                                                <img class="mb-3" src="{{$mb->logo}}" alt="{{$mb->logo_alt}}">
+                                            </div>
+                                        @endif   
+                                        <div class="col-md-6">
+                                            <iframe allowfullscreen allow="fullscreen" style="border:none;width:100%;height:100%;min-height: 400px;" src="{{$mb->embedded_iframe_src}}"></iframe> 
+                                        </div>
+                                    </div> 
                                 @endforeach
                             </div>    
                         @else
@@ -77,7 +97,17 @@
                             <div class="content">
                             @foreach($freightlinerData as $freightliner)
                                 <h3>{{$freightliner->name}}</h3>
-                                <iframe allowfullscreen allow="fullscreen" style="border:none;width:100%;height:326px;" src="{{$freightliner->embedded_iframe_src}}"></iframe>
+                                <hr/>
+                                <div class="row">
+                                    @if($freightliner->logo != 'https://www.velocitytruckcentres.com.au/storage/app/media')
+                                        <div class="col-md-6">
+                                            <img class="mb-3" src="{{$freightliner->logo}}" alt="{{$freightliner->logo_alt}}">
+                                        </div>
+                                    @endif   
+                                    <div class="col-md-6">
+                                        <iframe allowfullscreen allow="fullscreen" style="border:none;width:100%;height:100%;min-height: 400px;" src="{{$freightliner->embedded_iframe_src}}"></iframe> 
+                                    </div>
+                                </div> 
                                 <!-- <div class="row">
                                     <div class="col-md-3">
                                         <a href="{{$freightliner->pdf_url}}" target="_blank"><img class="mb-3" src="{{$freightliner->logo}}" alt="{{$freightliner->logo_alt}}"></a>
@@ -99,7 +129,17 @@
                             <div class="content">
                             @foreach($fusoData as $fuso)
                                 <h3>{{$fuso->name}}</h3>
-                                <iframe allowfullscreen allow="fullscreen" style="border:none;width:100%;height:326px;" src="{{$fuso->embedded_iframe_src}}"></iframe>
+                                <hr/>
+                                <div class="row">
+                                    @if($fuso->logo != 'https://www.velocitytruckcentres.com.au/storage/app/media')
+                                        <div class="col-md-6">
+                                            <img class="mb-3" src="{{$fuso->logo}}" alt="{{$fuso->logo_alt}}">
+                                        </div>
+                                    @endif   
+                                    <div class="col-md-6">
+                                        <iframe allowfullscreen allow="fullscreen" style="border:none;width:100%;height:100%;min-height: 400px;" src="{{$fuso->embedded_iframe_src}}"></iframe> 
+                                    </div>
+                                </div> 
                                 <!-- <div class="row">
                                     <div class="col-md-3">
                                         <a href="{{$fuso->pdf_url}}" target="_blank"><img class="mb-3" src="{{$fuso->logo}}" alt="{{$fuso->logo_alt}}"></a>
