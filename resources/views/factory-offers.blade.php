@@ -36,15 +36,6 @@
                         @endif
                             <i class="dtm-mercedes-logo"></i>Mercedes Benz Truck</a>
                         </li>
-                        @if(isset($selectedTab) && !empty($selectedTab) && $selectedTab=="mb-van")
-                            <li class="tab-title active">
-                            <a href="/factory-offers/mb-van"  aria-expanded="true" class="active">
-                        @else
-                            <li class="tab-title" id="benzvans_desc">
-                            <a href="/factory-offers/mb-van" aria-expanded="false">
-                        @endif
-                            <i class="dtm-mercedes-logo"></i>Mercedes Benz Vans</a>
-                        </li>
                         @if(isset($selectedTab) && !empty($selectedTab) && $selectedTab=="freightliner")
                             <li class="tab-title active" id="freightliner_desc">
                             <a href="/factory-offers/freightliner" aria-expanded="true" class="active">
@@ -62,6 +53,15 @@
                             <a href="/factory-offers/fuso" aria-expanded="false">
                         @endif
                             Fuso</a>
+                        </li>
+                        @if(isset($selectedTab) && !empty($selectedTab) && $selectedTab=="mb-van")
+                            <li class="tab-title active">
+                            <a href="/factory-offers/mb-van"  aria-expanded="true" class="active">
+                        @else
+                            <li class="tab-title" id="benzvans_desc">
+                            <a href="/factory-offers/mb-van" aria-expanded="false">
+                        @endif
+                            <i class="dtm-mercedes-logo"></i>Mercedes Benz Vans</a>
                         </li>
                     </ul>
                 </div>
