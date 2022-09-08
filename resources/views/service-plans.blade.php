@@ -25,10 +25,6 @@
                             <a href="#benz_tab" data-toggle="tab" aria-expanded="true" class="active">
                             <i class="dtm-mercedes-logo"></i>Mercedes Benz</a>
                         </li>
-                        <li class="tab-title" id="benzvans_desc">
-                            <a href="#benzvans_tab" data-toggle="tab" aria-expanded="false">
-                            <i class="dtm-mercedes-logo"></i> Mercedes Benz Vans</a>
-                        </li>
                         <li class="tab-title" id="freightliner_desc">
                             <a href="#freightliner_tab" data-toggle="tab" aria-expanded="false">
                             <i class="dtm-icon-gallery-truck"></i> Freightliner</a>
@@ -36,6 +32,10 @@
                         <li class="tab-title" id="fuso_desc">
                             <a href="#fuso_tab" data-toggle="tab" aria-expanded="false">
                             Fuso</a>
+                        </li>
+                        <li class="tab-title" id="benzvans_desc">
+                            <a href="#benzvans_tab" data-toggle="tab" aria-expanded="false">
+                            <i class="dtm-mercedes-logo"></i> Mercedes Benz Vans</a>
                         </li>
                     </ul>
                 </div>

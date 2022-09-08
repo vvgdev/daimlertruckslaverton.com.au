@@ -27,10 +27,6 @@
                             <a href="#benz_tab" data-toggle="tab" aria-expanded="true" class="active">
                             <i class="dtm-mercedes-logo"></i>Mercedes Benz</a>
                         </li>
-                        <li class="tab-title" id="benz_van_desc">
-                            <a href="#benz_van_tab" data-toggle="tab" aria-expanded="true">
-                            <i class="dtm-mercedes-logo"></i>Mercedes Benz Van</a>
-                        </li>
                         <li class="tab-title" id="freightliner_desc">
                             <a href="#freightliner_tab" data-toggle="tab" aria-expanded="false">
                             <i class="dtm-icon-gallery-truck"></i> Freightliner</a>
@@ -38,6 +34,10 @@
                         <li class="tab-title" id="fuso_desc">
                             <a href="#fuso_tab" data-toggle="tab" aria-expanded="false">
                             Fuso</a>
+                        </li>
+                        <li class="tab-title" id="benz_van_desc">
+                            <a href="#benz_van_tab" data-toggle="tab" aria-expanded="true">
+                            <i class="dtm-mercedes-logo"></i>Mercedes Benz Van</a>
                         </li>
                     </ul>
                 </div>
@@ -72,17 +72,7 @@
                             <div class="content">
                                 @foreach($mercedes_benz as $mb)
                                     <h3>{{$mb->name}}</h3>
-                                    <hr/>
-                                    <div class="row">
-                                        @if($mb->logo != 'https://www.velocitytruckcentres.com.au/storage/app/media')
-                                            <div class="col-md-6">
-                                                <img class="mb-3" src="{{$mb->logo}}" alt="{{$mb->logo_alt}}">
-                                            </div>
-                                        @endif   
-                                        <div class="col-md-6">
-                                            <iframe allowfullscreen allow="fullscreen" style="border:none;width:100%;height:100%;min-height: 400px;" src="{{$mb->embedded_iframe_src}}"></iframe> 
-                                        </div>
-                                    </div> 
+                                    <iframe allowfullscreen allow="fullscreen" style="border:none;width:100%;height:100%;min-height: 400px;" src="{{$mb->embedded_iframe_src}}"></iframe> 
                                 @endforeach
                             </div>    
                         @else
