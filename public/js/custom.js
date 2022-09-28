@@ -49,7 +49,7 @@ DTMScripts = {
                 spaceBetween: 30,
                 centeredSlides: true,
                 autoplay: {
-                    delay: 2500,
+                    delay: 5000,
                     disableOnInteraction: false,
                 },
                 pagination: {
@@ -60,6 +60,15 @@ DTMScripts = {
                     nextEl: '.swiper-button-next',
                     prevEl: '.swiper-button-prev',
                 },
+            });
+            mySwiper.on('transitionEnd', function () {
+                var index = mySwiper.realIndex + 1;
+                
+                var getHead = $('#img_tagline_'+index).text();
+                $('#diplay_tagline').text(getHead);
+            
+                var getDesc = $('#img_desc_'+index).html();
+                $('#display_dec').html(getDesc);
             });
         }
     },

@@ -7,14 +7,30 @@
         <div class="swiper-container">
             <div class="swiper-wrapper">
                 @if(isset($sliders) && count($sliders)>0)
+                @php $index1 = 0; @endphp
                     @foreach($sliders as $slider)
-
+                        @php $index1++; @endphp
+                        <div style="display:none;">
+                            <div id="img_tagline_{{$index1}}">{{ $slider->tagline}}</div>
+                            <div id="img_desc_{{$index1}}">{{ $slider->description }}</div>
+                        </div>
+                        @if($index1 == 0)
+                            <div style="display:none;">
+                                <div id="img_tagline_{{ count($sliders) + 1}}">{{ $slider->tagline}}</div>
+                                <div id="img_desc_{{ count($sliders) + 1}}">{{ $slider->description }}</div>
+                            </div>
+                        @endif
                         <div class="swiper-slide swiper-slide-two">
                             <div class="spacer"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAB4AAAAMMAQMAAACIUSg1AAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAAM1JREFUeF7twDEBAAAAwiD7p7bGDlgYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMAB3moAASHInzYAAAAASUVORK5CYII=" class="rrwp-img" alt="" aria-hidden="true">
                             </div>
                             <div class="dektop-slider-image bg responsive-bgimg" style="background: url('{{ $slider->desktop_img }}') no-repeat scroll 0 0/100% 100% ;">
                                 <div class="swiper-image" id= "">
-                                    <div class="swiper-image-inner swiper-image-two" onclick="navigateToURL('{{$slider->site_learn_more_url}}')"></div>
+                                    <div class="swiper-image-inner swiper-image-two {{(($slider->text_position == 'left') ? 'vtc-text-left' : ($slider->text_position == 'right')) ? 'vtc-text-right' : (($slider->text_position == 'top' ? 'vtc-text-top' : ''))}}" onclick="navigateToURL('{{$slider->site_learn_more_url}}')">
+                                        <div class="container">
+                                            <h1 class="slider-title">{{ $slider->tagline}}</h1>
+                                            <p class="paragraph">{{ $slider->description }}</p>
+                                        </div>
+                                    </div>
                                 </div>  
                             </div>  
                             <!-- If we need navigation buttons -->
@@ -38,6 +54,20 @@
                     </div>
                 @endif
             </div>
+            @if(isset($sliders) && count($sliders)>0)
+                <div class="mobile-layer-title">
+                    <div class="container vtc-text-left ">
+                    @php $index = 0; @endphp
+                    @foreach($sliders as $slider)
+                        @if($index == 0)
+                        <h1 class="slider-title" id="diplay_tagline">{{ $slider->tagline}}</h1>
+                        <p class="paragraph" id="display_dec">{{ $slider->description }}</p>
+                        @endif
+                        @php $index++; @endphp
+                    @endforeach
+                    </div>
+                </div>
+            @endif
         </div>
     </div>
     <div class="emergency-mobile-section">
