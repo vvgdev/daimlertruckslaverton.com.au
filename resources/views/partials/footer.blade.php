@@ -1,4 +1,5 @@
 <footer class="footer" id="layout-footer">
+    <div data-key='Ic4Et9V0JNU0QJmUqPgj' id="chat_js_lib"></div><script type="text/javascript" src="https://www.widgetinstall.com/plugin/chat.js" data-key="Ic4Et9V0JNU0QJmUqPgj" id="chat_js_lib"></script>
     <div class="back-to-top">
         <a href="#top" id="back_top">
             <i class=""></i>
