@@ -5429,3 +5429,10 @@ input:checked + .slider:before {
 .slider.round:before {
    border-radius: 50%;
 }
+.preferred-booking-details {
+    background-color: #fafafa;
+    border: solid 1px #fafafa;
+    font: 300 14px/22px 'Montserrat', Arial;
+    box-shadow: none;
+    border-radius: unset;
+}

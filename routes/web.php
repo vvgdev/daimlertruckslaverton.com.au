@@ -33,7 +33,7 @@ Route::get("/contact-us", 'CompanyController@getContactUsLocation');
 // Route::post("/finance-calculator",[FormValidtionController::class,'FinanceCalculatorForm']);
 // Route::get("/finance-calculator", 'FinanceController@getFinanceCalculatorLocation');
 
-// Route::post("/finance",[FormValidtionController::class,'FinanceForm']);
+Route::post("/finance",[FormValidtionController::class,'FinanceForm']);
 Route::get("/finance", 'FinanceController@getFinanceLocation');
 
 // Route::get('/inventory-detail', 'InventoryController@inventory_detail_index');
@@ -65,13 +65,13 @@ Route::get('/stock/used-trucks/{slug}', 'InventoryController@get_usedtrucks_deta
 }); */
 Route::get("/latest-news", 'NewsController@getNewsLocation');
 
-// Route::post("/our-team",[FormValidtionController::class,'OurTeamForm']);
+Route::post("/our-team",[FormValidtionController::class,'OurTeamForm']);
 Route::get("/our-team", 'CompanyController@getMeetOurTeamLocation');
 
-// Route::post("/parts-specials",[FormValidtionController::class,'PartsSpecialForm']);
+Route::post("/parts-specials",[FormValidtionController::class,'PartsSpecialForm']);
 Route::get("/parts-specials", 'PartsController@getPartsSpecialLocation');
 
-// Route::post("/parts",[FormValidtionController::class,'PartsForm']);
+Route::post("/parts",[FormValidtionController::class,'PartsForm']);
 Route::get("/parts", 'PartsController@getPartsLocation');
 
 Route::get('/engines', "InventoryController@getEngineDetails");
@@ -82,11 +82,11 @@ Route::get('/transmissions', "InventoryController@getTransmissionsDetails");
 }); */
 Route::get("/recent-deliveries", 'NewsController@getRecentDeliveriesLocation');
 
-// Route::post("/service",[FormValidtionController::class,'ServiceForm']);
+Route::post("/service",[FormValidtionController::class,'ServiceForm']);
 Route::get("/service", 'ServiceController@getServiceLocation');
 
 Route::get('/specials', 'InventoryController@get_specials');
-// Route::post('/specials', [FormValidtionController::class,'SpecialsForm']);
+Route::post('/specials', [FormValidtionController::class,'SpecialsForm']);
 // Route::get('/specials', function () {
 //     return view('specials');
 // });
