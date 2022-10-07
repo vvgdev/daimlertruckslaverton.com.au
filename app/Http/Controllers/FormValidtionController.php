@@ -83,6 +83,7 @@ class FormValidtionController extends Controller
             $param['comment'] = $request->input("detail");
             $param['terms_conditions_check'] = ($request->input("terms2") == 'on') ? 1 : 0;
             $param['type'] = "service";
+            $param['is_testing_environment'] = (env('APP_ENV') == 'production' || env('APP_ENV') == 'live') ? false : true;
             $inventory=APIHelper::sendGuzzleRequest($url, 'post',$param);
             
             return redirect()->back()->with('message', 'Data Submitted Successfully...!')->with('tab_id', 'service_tab_id');
@@ -141,6 +142,7 @@ class FormValidtionController extends Controller
             $param['comment'] = $request->input("detail");
             $param['terms_conditions_check'] = ($request->input("terms1") == 'on') ? 1 : 0;
             $param['type'] = "parts";
+            $param['is_testing_environment'] = (env('APP_ENV') == 'production' || env('APP_ENV') == 'live') ? false : true;
             $inventory=APIHelper::sendGuzzleRequest($url, 'post',$param);
             
             return redirect()->back()->with('message', 'Data Submitted Successfully...!')->with('tab_id', 'parts_tab_id');
@@ -236,6 +238,7 @@ class FormValidtionController extends Controller
             $param['comment'] = $request->input("detail");
             $param['terms_conditions_check'] = ($request->input("terms3") == 'on') ? 1 : 0;
             $param['type'] = "finance";
+            $param['is_testing_environment'] = (env('APP_ENV') == 'production' || env('APP_ENV') == 'live') ? false : true;
             $inventory=APIHelper::sendGuzzleRequest($url, 'post',$param);
             
             return redirect()->back()->with('message', 'Data Submitted Successfully...!')->with('tab_id', 'finance_tab_id');
@@ -341,6 +344,7 @@ class FormValidtionController extends Controller
         $param['mobile'] = $request->input("phone");
         $param['comment'] = $request->input("detail");
         $param['type'] = trim($request->input("type"));
+        $param['is_testing_environment'] = (env('APP_ENV') == 'production' || env('APP_ENV') == 'live') ? false : true;
         $inventory=APIHelper::sendGuzzleRequest($url, 'post',$param);
         
         return redirect()->back()->with('message', 'Data Submitted Successfully...!')->with('tab_id', 'contact_tab_id');
