@@ -624,7 +624,10 @@
         if (checked) {
             var url = '';
             var param = {};
-            if( formType == "form_book_drive" ) {
+            if(formType == "form_tradein") {
+                url = "{{ config('apiprovider.api.store_tradein_form')}}";
+                param['type'] = "valuetrade";
+            } else if( formType == "form_book_drive" ) {
                 url = "{{ config('apiprovider.api.store_book_drive')}}";
                 param['type'] = "bookadrive";
             } else if( formType == "form_send_to_friend" ) {
@@ -649,6 +652,7 @@
             param['mobile'] = phone;
             param['comment'] = detail;
             param['terms_conditions_check'] = 1;
+            param['is_testing_environment'] = ('{{ env("APP_ENV") }}' == 'live' || '{{ env("APP_ENV") }}' == 'production') ? false : true;
             $.ajax({
                 url: url,
                 type: "post", //send it through get method
@@ -658,11 +662,18 @@
                 success: function(response) {
                     // $("#contact_type").val('');
                     // $("#title").val('');
+
+                    /* $("#contact_type")[0].selectedIndex = 0;
+                    $("#title")[0].selectedIndex = 0; */
+                    $("#contact_type").val('').trigger('change');
+                    $("#title").val('').trigger('change');
                     $("#firstName").val('');
                     $("#lastName").val('');
                     $("#email").val('');
                     $("#phone").val('');
                     $("#detail").val('');
+                    $('input[type=checkbox]').prop('checked',false);
+                    grecaptcha.reset();
                     // $("#terms")[0].checked;
                     alert('Data Submitted Successfully...!');
                     $('#requestQuoteModal').modal('hide');
