@@ -93,6 +93,11 @@
             </a>
         </div>
         <div class="col col3">
+            <a href="https://www.velocitytruckcentres.com.au/careers" target="_blank">
+                <h2>Careers <i class="fa fa-arrow-right"></i></h2>
+            </a>
+        </div>
+        <div class="col col4">
             <a href="/specials">
                 <h2>Latest<br/> Offers <i class="fa fa-arrow-right"></i></h2>
             </a>

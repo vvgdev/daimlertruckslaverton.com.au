@@ -621,7 +621,13 @@ header nav .company-links{
 }
 header nav .company-links li{
     display: inline-block;
-    padding: 0 15px;
+    padding: 5px 15px;
+}
+header nav .company-links li.careers-link{
+    background-color: #A5161E;
+}
+header nav .company-links li.careers-link a{
+    color: #fff;
 }
 header nav .company-links li i{
     padding-right: 7px;
@@ -638,8 +644,8 @@ header nav .main-nav > li {
     position: relative;
     display: inline-block;
     text-align: center;
-    height: 34px;
-    line-height: 35px;
+    height: 30px;
+    line-height: 30px;
     padding: 0 9px;
 }
 header nav .main-nav li a{
@@ -1084,6 +1090,9 @@ header nav .main-nav li .nav-secondary li a{
     background: linear-gradient( rgba(5,19,43, .8), rgba(5,19,43, .8)), url('../images/3.webp');
 }
 .content-blocks .col3::before {
+    background: linear-gradient( rgba(5,19,43, .8), rgba(5,19,43, .8)), url('../images/image1.jpeg');
+}
+.content-blocks .col4::before {
     background: linear-gradient( rgba(5,19,43, .8), rgba(5,19,43, .8)), url('../images/4.webp');
 }
 .content-blocks .col h1 , .content-blocks .col h2{
