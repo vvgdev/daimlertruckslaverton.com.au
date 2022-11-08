@@ -578,12 +578,15 @@ header{
 header .company-logo{
     margin-top: 10px;
     margin-bottom: 5px;
+    max-height: 92px;
 }
 
 header .emergency-contact{
     text-align: right;
+    padding-right: 15px;
     line-height: 19px;
     padding-top: 3px;
+    float: right;
 }
 header .emergency-contact, header .emergency-contact a{
     color: #000;
@@ -599,8 +602,10 @@ header .company-contact{
     float: right;
 }
 header .vtc-logo{
-    float: right;
-    margin-bottom: -3px;
+    /* float: right;
+    margin-bottom: -3px; */
+    width: 300px;
+    margin-top: 10px;
 }
 header .elite-logo{
     float: right;
@@ -610,35 +615,39 @@ header nav{
     font-family: 'Montserrat';
     font-weight: 300;
     position: absolute;
-    bottom: 5px;
+    bottom: 0;
     right: 0;
+    left: 0;
 }
-header nav .company-links{
+header .company-links{
     padding: 0;
     margin: 0;
     list-style-type: none;
     text-align: right;
 }
-header nav .company-links li{
+header .company-links li{
     display: inline-block;
-    padding: 5px 15px;
+    margin: 0 10px;
 }
-header nav .company-links li.careers-link{
+header .company-links li a{
+    padding: 5px 15px;
+    display: block;
+}
+header .company-links li.careers-link a{
+    color: #fff;
     background-color: #A5161E;
 }
-header nav .company-links li.careers-link a{
-    color: #fff;
-}
-header nav .company-links li i{
+header .company-links li i{
     padding-right: 7px;
 }
 header nav .main-nav{
     padding: 0;
-    display: table;
+    display: flex;
     width: 100%;
     position: relative;
     margin: 0;
     text-align: right;
+    justify-content: space-between;
 }
 header nav .main-nav > li {
     position: relative;
@@ -4178,6 +4187,9 @@ header nav .main-nav li .nav-secondary li a{
     }
     header nav .main-nav > li a{
         font-size: 11px;
+    }
+    header .vtc-logo{
+        width: 200px;
     }
     .our-team .contact-person-img img{
         max-height: 210px;
