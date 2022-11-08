@@ -85,13 +85,15 @@
                 </a>
             </div>
             <div class="col-md-8">
-                <p class="emergency-contact clear-both">24/7 Emergency Roadside Assistance: <br> Trucks: <a href="tel:1800 033 557">1800 033 557</a>
-                </p>
+                <a class="pull-left" href="https://www.velocitytruckcentres.com.au/"><img class="vtc-logo" src="/images/vtc_logo.png" /></a>
+                <div class="pull-right">
+                    <p class="emergency-contact">24/7 Emergency Roadside Assistance: <br> Trucks: <a href="tel:1800 033 557">1800 033 557</a></p>
+                    <ul class="company-links clear-both">
+                        <li class="careers-link"><a href="https://www.velocitytruckcentres.com.au/careers" target="_blank"><i class="fa fa-user"></i>Careers</a> </li><li class=""><a href="/about-us"><i class="fa fa-info"></i>About us</a> </li><li class="mr-0"><a href="/contact-us#contact_tab_id"><i class="fa fa-phone"></i>Contact us </a> </li>
+                    </ul>
+                </div>
                 <nav class="topmenu">
                     <div class="menu-section">
-                        <ul class="company-links">
-                            <li class=""><a href="https://www.velocitytruckcentres.com.au/"><img class="vtc-logo pull-right" src="/images/vtc_logo.png" width="125" height="75"/></a></li><li class="careers-link"><a href="https://www.velocitytruckcentres.com.au/careers" target="_blank"><i class="fa fa-user"></i>Careers</a> </li><li class=""><a href="/about-us"><i class="fa fa-info"></i>About us</a> </li><li class=""><a href="/contact-us#contact_tab_id"><i class="fa fa-phone"></i>Contact us </a> </li>
-                        </ul>
                         <ul class="main-nav">
                             <li>
                                 <a href="javascript:void(0)">Brands <i class="fa fa-angle-down"></i></a>
