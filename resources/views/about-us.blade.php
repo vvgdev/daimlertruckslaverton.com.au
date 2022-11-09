@@ -37,7 +37,7 @@
                     <p>Our customer lounge area with free WIFI will ensure you can enjoy a quality cup of coffee in comfort while waiting for your vehicle.</p>
                     <p class="bold">Come and see us</p>
                     <p>You can talk to our friendly staff about our services at our Laverton dealership or give us a call <strong><a href="tel:03 9680 8777">03 9680 8777</a></strong> to find out more information or book a test drive.</p>
-                    <p>Velocity Truck Centres (formerly known as Adtrans National Trucks) has served the truck industry for many years. With more than 840 employees spread across 5 states, we can take care of your trucking needs.</p>
+                    <p>Velocity Truck Centres has served the truck industry for many years. With more than 840 employees spread across 5 states, we can take care of your trucking needs.</p>
                     <p>Our experienced workforce including many staff who have over 20 years of experience and are a testament to our ongoing commitment and passion for what we do. The employees are the heart and soul of our brand and we love sharing our knowledge and skills with our customers.</p>
                     <p>We are a division of the global brand Velocity Vehicle Group.</p>
                     <p><strong>WHY CHOOSE VELOCITY TRUCK CENTRES?</strong></p>
