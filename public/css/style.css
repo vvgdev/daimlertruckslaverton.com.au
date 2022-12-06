@@ -4171,6 +4171,28 @@ header nav .main-nav li .nav-secondary li a{
 }
 /* #endregion*/
 
+/*#region -------------------- Finance Page------------------*/
+.finance-page .box-title{
+    font-size: 18px;
+    color:#fff;
+}
+.finance-page ul{
+    list-style: none;
+    margin-bottom: 20px;
+    padding: 0;
+}
+.finance-page .title{
+    font: bold 18px/27px 'MontserratBold', Arial;
+}
+.finance-page .listings{
+    list-style-type: decimal;
+    padding-left: 40px;
+}
+.finance-page h3{
+    font: bold 18px/27px 'MontserratBold', Arial;
+}
+/* #endregion*/
+
 /* #region ------------------- IMOTOR Styles -----------------------*/
 .collapse.in {
     display: block !important;
