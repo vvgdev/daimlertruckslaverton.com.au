@@ -62,7 +62,7 @@
                     The Fast Track finance program for business customers gives you the convenience of a streamlined credit approval process with no need for income verification. As a specialised truck financier, Daimler Truck Financial Services makes it easier and faster for you to obtain credit on your Mercedes-Benz, Freightliner or Fuso truck - for up to $400,000.
                 </p>
                 <p class="mt-4">
-                    <strong class="bold">Contact us for further details and vehicle eligibility via our <a href="/contactus#finance_tab_id" style="color: #007bff;">online form</a>.</strong>
+                    <strong class="bold">Contact us for further details and vehicle eligibility via our <a href="/contact-us#finance_tab_id" style="color: #007bff;">online form</a>.</strong>
                 </p>
                 <h3 class="mt-5">DISCLAIMER:</h3>
                 <p>
