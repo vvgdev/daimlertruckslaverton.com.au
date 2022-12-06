@@ -77,9 +77,6 @@
                 <p>
                     <small>Fast Track is restricted to approved business customers financing a new Mercedes-Benz, Freightliner or Fuso truck with DTFSAu who hold a current membership with a professional association recognised by DTFSAu. Approval for existing customers subject to existing customer’s current finance with DTFSAu.</small>
                 </p>
-                <p>
-                    <small>Contact us for further details and vehicle eligibility via our <a href="/contactus#finance_tab_id">online form</a>.</small>
-                </p>
             </div>
             @include('partials.location_details')
         </div>
