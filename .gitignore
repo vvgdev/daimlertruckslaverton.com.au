@@ -26,3 +26,5 @@ yarn-error.log
 !/storage/framework/sessions/.gitkeep
 
 !/storage/logs/.gitkeep
+
+/public/robots.txt

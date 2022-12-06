@@ -1,0 +1,8 @@
+#Production
+User-agent: *
+Disallow:
+Sitemap: https://www.daimlertruckslaverton.com.au/sitemap.xml
+
+#Staging
+User-agent: *
+Disallow: /

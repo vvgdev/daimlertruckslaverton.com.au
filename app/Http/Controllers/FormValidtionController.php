@@ -20,12 +20,12 @@ class FormValidtionController extends Controller
             $captcha = $recaptchaToken;
 
         if(!$captcha) {
-            return back()->withErrors(['recaptcha_token' => 'Please check the the captcha form.'])->with('tab_id', 'service_tab_id');
+            return back()->withInput()->withErrors(['recaptcha_token' => 'Please check the the captcha form.'])->with('tab_id', 'service_tab_id');
         }
 
         $captchaResponse = Utils::verifyCaptcha($captcha);
         if($captchaResponse->success == false){
-            return back()->withErrors(['recaptcha_token' => 'There was an error while validating Captcha, Please try again.'])->with('tab_id', 'service_tab_id');
+            return back()->withInput()->withErrors(['recaptcha_token' => 'There was an error while validating Captcha, Please try again.'])->with('tab_id', 'service_tab_id');
         } else {
             $validator = Validator::make($request->all(), 
             [ 
@@ -35,13 +35,19 @@ class FormValidtionController extends Controller
                 'email'=>'required|regex:/(.+)@(.+)\.(.+)/i',
                 'phone'=>'required|digits:10',
                 // 'rego'=>'required|numeric',
-                'year'=>'numeric|digits:4|integer|min:1900|max:'.(date('Y')+1),
-                'preferred_drop_off_date'=>'required|date_format:d/m/Y',
+                'year'=>'required|numeric|digits:4|integer|min:1900|max:'.(date('Y')+1),
+                'preferred_drop_off_date'=>'required|date_format:Y-m-d',
                 'preferred_drop_off_time'=>'required|date_format:H:i',
-                'preferred_pick_up_date'=>'required|date_format:d/m/Y',
+                'preferred_pick_up_date'=>'required|date_format:Y-m-d',
                 'preferred_pick_up_time'=>'required|date_format:H:i',
-                'detail'=>'max:1000',
-                'terms'=>'accepted' 
+                'detail'=>'required|max:1000',
+                'address'=>'required|max:190',
+                'suburb'=>'required|max:190',
+                'state'=>'required|max:190',
+                'postcode'=>'required|max:190',
+                'registration'=>'required|max:190',
+                'chassisno'=>'required|max:190',
+                'terms2'=>'accepted' 
             ]);
 
             if($validator->fails())
@@ -60,16 +66,24 @@ class FormValidtionController extends Controller
             $param['email'] = $request->input("email");
             $param['mobile'] = $request->input("phone");
             $param['rego'] = $request->input("rego");
+            $param['address'] = $request->input("address");
+            $param['suburb'] = $request->input("suburb");
+            $param['state'] = $request->input("state");
+            $param['postcode'] = $request->input("postcode");
+            $param['registration'] = $request->input("registration");
+            $param['chassisno2'] = $request->input("chassisno");
             $param['vehicle_year'] = $request->input("year");
-            $param['vehicle_model'] = $request->input("vehicle_model");
+            $param['make'] = $request->input("make");
+            $param['vehicle_model'] = $request->input("model2");
             $param['odometer'] = $request->input("odometer");
-            $param['preferred_drop_off_date'] = $request->input("preferred_drop_off_date");
+            $param['preferred_drop_off_date'] = date('d/m/Y', strtotime($request->input("preferred_drop_off_date")));
             $param['preferred_drop_off_time'] = $request->input("preferred_drop_off_time");
-            $param['preferred_pick_up_date'] = $request->input("preferred_pick_up_date");
+            $param['preferred_pick_up_date'] = date('d/m/Y', strtotime($request->input("preferred_pick_up_date")));
             $param['preferred_pick_up_time'] = $request->input("preferred_pick_up_time");
             $param['comment'] = $request->input("detail");
-            $param['terms_conditions_check'] = ($request->input("terms") == 'on') ? 1 : 0;
+            $param['terms_conditions_check'] = ($request->input("terms2") == 'on') ? 1 : 0;
             $param['type'] = "service";
+            $param['is_testing_environment'] = (env('APP_ENV') == 'production' || env('APP_ENV') == 'live') ? false : true;
             $inventory=APIHelper::sendGuzzleRequest($url, 'post',$param);
             
             return redirect()->back()->with('message', 'Data Submitted Successfully...!')->with('tab_id', 'service_tab_id');
@@ -84,12 +98,12 @@ class FormValidtionController extends Controller
             $captcha = $recaptchaToken;
 
         if(!$captcha) {
-            return back()->withErrors(['recaptcha_token' => 'Please check the the captcha form.'])->with('tab_id', 'parts_tab_id');
+            return back()->withInput()->withErrors(['recaptcha_token' => 'Please check the the captcha form.'])->with('tab_id', 'parts_tab_id');
         }
 
         $captchaResponse = Utils::verifyCaptcha($captcha);
         if($captchaResponse->success == false){
-            return back()->withErrors(['recaptcha_token' => 'There was an error while validating Captcha, Please try again.'])->with('tab_id', 'parts_tab_id');
+            return back()->withInput()->withErrors(['recaptcha_token' => 'There was an error while validating Captcha, Please try again.'])->with('tab_id', 'parts_tab_id');
         } else {
             $validator = Validator::make($request->all(), 
             [ 
@@ -103,7 +117,7 @@ class FormValidtionController extends Controller
                 'vehicle_model'=>'required',
                 'rego_number'=>'required|numeric',
                 'detail'=>'required|max:1000',
-                'terms'=>'accepted'
+                'terms1'=>'accepted'
             ]);
 
             if($validator->fails())
@@ -126,8 +140,9 @@ class FormValidtionController extends Controller
             $param['vehicle_model'] = $request->input("vehicle_model");
             $param['rego'] = $request->input("rego_number");
             $param['comment'] = $request->input("detail");
-            $param['terms_conditions_check'] = ($request->input("terms") == 'on') ? 1 : 0;
+            $param['terms_conditions_check'] = ($request->input("terms1") == 'on') ? 1 : 0;
             $param['type'] = "parts";
+            $param['is_testing_environment'] = (env('APP_ENV') == 'production' || env('APP_ENV') == 'live') ? false : true;
             $inventory=APIHelper::sendGuzzleRequest($url, 'post',$param);
             
             return redirect()->back()->with('message', 'Data Submitted Successfully...!')->with('tab_id', 'parts_tab_id');
@@ -184,12 +199,12 @@ class FormValidtionController extends Controller
             $captcha = $recaptchaToken;
 
         if(!$captcha) {
-            return back()->withErrors(['recaptcha_token' => 'Please check the the captcha form.'])->with('tab_id', 'finance_tab_id');
+            return back()->withInput()->withErrors(['recaptcha_token' => 'Please check the the captcha form.'])->with('tab_id', 'finance_tab_id');
         }
 
         $captchaResponse = Utils::verifyCaptcha($captcha);
         if($captchaResponse->success == false){
-            return back()->withErrors(['recaptcha_token' => 'There was an error while validating Captcha, Please try again.'])->with('tab_id', 'finance_tab_id');
+            return back()->withInput()->withErrors(['recaptcha_token' => 'There was an error while validating Captcha, Please try again.'])->with('tab_id', 'finance_tab_id');
         } else {
             $validator = Validator::make($request->all(), 
             [ 
@@ -199,8 +214,8 @@ class FormValidtionController extends Controller
                 'email'=>'required|regex:/(.+)@(.+)\.(.+)/i',
                 'phone'=>'required|digits:10',
                 'amount_required'=>'required',
-                'detail'=>'max:1000',
-                'terms'=>'accepted' 
+                'detail'=>'required|max:1000',
+                'terms3'=>'accepted' 
             ]);
             
             if($validator->fails())
@@ -219,10 +234,11 @@ class FormValidtionController extends Controller
             $param['email'] = $request->input("email");
             $param['mobile'] = $request->input("phone");
             $param['amount_required'] = $request->input("amount_required");
-            $param['loan_term'] = $request->input("loan_term");
+            $param['loan_term'] = $request->input("loan_term3");
             $param['comment'] = $request->input("detail");
-            $param['terms_conditions_check'] = ($request->input("terms") == 'on') ? 1 : 0;
+            $param['terms_conditions_check'] = ($request->input("terms3") == 'on') ? 1 : 0;
             $param['type'] = "finance";
+            $param['is_testing_environment'] = (env('APP_ENV') == 'production' || env('APP_ENV') == 'live') ? false : true;
             $inventory=APIHelper::sendGuzzleRequest($url, 'post',$param);
             
             return redirect()->back()->with('message', 'Data Submitted Successfully...!')->with('tab_id', 'finance_tab_id');
@@ -295,11 +311,11 @@ class FormValidtionController extends Controller
             if(isset($recaptchaToken))
                 $captcha = $recaptchaToken;
             if(!$captcha) {
-                return back()->withErrors(['recaptcha_token' => 'Please check the the captcha form.'])->with('tab_id', 'contact_tab_id');
+                return back()->withInput()->withErrors(['recaptcha_token' => 'Please check the the captcha form.'])->with('tab_id', 'contact_tab_id');
             }
             $captchaResponse = Utils::verifyCaptcha($captcha);
             if($captchaResponse->success == false){
-                return back()->withErrors(['recaptcha_token' => 'There was an error while validating Captcha, Please try again.'])->with('tab_id', 'contact_tab_id');
+                return back()->withInput()->withErrors(['recaptcha_token' => 'There was an error while validating Captcha, Please try again.'])->with('tab_id', 'contact_tab_id');
             }
             $validator = Validator::make($request->all(), 
             [ 
@@ -308,7 +324,7 @@ class FormValidtionController extends Controller
                 'lastName'=>'required|max:255',
                 'email'=>'required|regex:/(.+)@(.+)\.(.+)/i',
                 'phone'=>'required|digits:10',
-                'detail'=>'max:1000',
+                'detail'=>'required|max:1000',
                 'terms'=>'accepted' 
             ]);
             $param['terms_conditions_check'] = ($request->input("terms") == 'on') ? 1 : 0;
@@ -328,6 +344,7 @@ class FormValidtionController extends Controller
         $param['mobile'] = $request->input("phone");
         $param['comment'] = $request->input("detail");
         $param['type'] = trim($request->input("type"));
+        $param['is_testing_environment'] = (env('APP_ENV') == 'production' || env('APP_ENV') == 'live') ? false : true;
         $inventory=APIHelper::sendGuzzleRequest($url, 'post',$param);
         
         return redirect()->back()->with('message', 'Data Submitted Successfully...!')->with('tab_id', 'contact_tab_id');

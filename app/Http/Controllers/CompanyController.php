@@ -25,6 +25,11 @@ class CompanyController extends Controller {
     
     public function getAboutUsLocation() {
         try {
+
+            $url = config('apiprovider.api.get_employee_count');
+            $param=[];
+            $getemployeeCount = APIHelper::sendGuzzleRequest($url, 'get',$param);
+
             $locationDetailsArr = APIHelper::getSiteWiseLocationDepartments();
             $siteData = [];
             $url=config('apiprovider.api.get_social_media');
@@ -35,7 +40,7 @@ class CompanyController extends Controller {
             $response = $e->getResponse();
             $result = $response->getBody();
         }
-        return view('about-us', ["locationDetails" => $locationDetailsArr, "siteData"=>$siteData]);
+        return view('about-us', ["locationDetails" => $locationDetailsArr, "siteData"=>$siteData, "emp_count" => $getemployeeCount->content->employee_count]);
     }
     
     public function getMeetOurTeamLocation() {

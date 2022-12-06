@@ -39,7 +39,7 @@
                                     <div class="col-md-2 form-group">
                                         <fieldset>
                                             <select id="title" name="title" class="custom-select">
-                                                <option value="" @if (old('title') == '') selected="selected" @endif>Please Select</option>
+                                                <option value="" @if (old('title') == '') selected="selected" @endif>Please Select *</option>
                                                 <option value="Mr" @if (old('title') == 'Mr') selected="selected" @endif>Mr</option>
                                                 <option value="Miss" @if (old('title') == 'Miss') selected="selected" @endif>Miss</option>
                                                 <option value="Mrs"@if (old('title') == 'Mrs') selected="selected" @endif>Mrs</option>
@@ -92,7 +92,7 @@
                                 </div>
                                 <div class="row">
                                     <div class="col-md-12 form-group">
-                                        <textarea name="detail" id="detail" rows="5" cols="30" placeholder="Comments (maximum 1000 characters) *"></textarea>
+                                        <textarea name="detail" type="text" id="detail" rows="5" cols="30" placeholder="Comments (maximum 1000 characters) *">{{ Request::old('detail') }}</textarea>
                                         @if(session()->has('tab_id') && session()->get('tab_id') == 'contact_tab_id')
                                             <span class="error">@error('detail'){{$message}}@enderror</span>
                                         @endif
@@ -101,14 +101,14 @@
                                 <div class="custom-checkbox form-group">
                                     <label for="newtrucks" class="checkbox-custom full-width">
                                         Yes, I would like to subscribe to receive latest offers & product updates.
-                                        <input type="checkbox" id="newtrucks" name="newtrucks" value="new-trucks" class="truck-condition"> 
+                                        <input type="checkbox" id="newtrucks" name="newtrucks" value="new-trucks" @if(Request::old('newtrucks')) checked @endif class="truck-condition"> 
                                         <span class="checkmark"></span>
                                     </label>
                                 </div>
                                 <div class="custom-checkbox form-group">
                                     <label for="terms" class="checkbox-custom full-width">
                                         I agree with the website <a href="/disclaimer/">terms of use</a> and that my information will be handled by Daimler Trucks Laverton in accordance with the <a href="https://www.velocitytruckcentres.com.au/privacy-policy">Dealer Privacy Policy</a>.<em class="required">*</em>
-                                        <input type="checkbox" id="terms" name="terms" :value=true class="truck-condition"> 
+                                        <input type="checkbox" id="terms" name="terms" :value=true @if(Request::old('terms')) checked @endif class="truck-condition"> 
                                         <span class="checkmark"></span>                                        
                                     </label>
                                     @if(session()->has('tab_id') && session()->get('tab_id') == 'contact_tab_id')
@@ -140,7 +140,7 @@
                                 <div class="row">
                                     <div class="col-md-2 form-group">
                                         <select id="title1" name="title" class="custom-select">
-                                            <option value="" @if (old('title') == '') selected="selected" @endif>Please Select</option>
+                                            <option value="" @if (old('title') == '') selected="selected" @endif>Please Select *</option>
                                             <option value="Mr" @if (old('title') == 'Mr') selected="selected" @endif>Mr</option>
                                             <option value="Miss" @if (old('title') == 'Miss') selected="selected" @endif>Miss</option>
                                             <option value="Mrs"@if (old('title') == 'Mrs') selected="selected" @endif>Mrs</option>
@@ -233,10 +233,10 @@
                                 <div class="row">
                                     <div class="col-md-12 form-group">
                                         <fieldset>
-                                            <textarea name="detail" type="text" id="detail1" rows="5" cols="30" placeholder="Order Detail(maximum 1000 characters) *"></textarea>
+                                            <textarea name="detail" type="text" id="detail1" rows="5" cols="30" placeholder="Order Detail(maximum 1000 characters) *">{{ Request::old('detail') }}</textarea>
                                             <!-- <label for="detail1" class="field-label">Order Detail(maximum 1000 characters) <em class="required">*</em></label> -->
                                             @if(session()->has('tab_id') && session()->get('tab_id') == 'parts_tab_id')
-                                                <span class="error">@error('detail'){{$message}}@enderror</span>
+                                                <span class="error">@error('detail')The order detail field is required.@enderror</span>
                                             @endif
                                         </fieldset>
                                     </div>
@@ -244,11 +244,11 @@
                                 <div class="custom-checkbox form-group">
                                     <label for="terms1" class="checkbox-custom full-width">
                                         I agree with the website <a href="/disclaimer/">terms of use</a> and that my information will be handled by Daimler Trucks Laverton in accordance with the <a href="https://www.velocitytruckcentres.com.au/privacy-policy">Dealer Privacy Policy</a>.<em class="required">*</em>
-                                        <input type="checkbox" id="terms1" name="terms" :value=true class="truck-condition" > 
+                                        <input type="checkbox" id="terms1" name="terms1" :value=true @if(Request::old('terms1')) checked @endif class="truck-condition" > 
                                         <span class="checkmark"></span>
                                     </label>
                                     @if(session()->has('tab_id') && session()->get('tab_id') == 'parts_tab_id')
-                                        <span class="error">@error('terms'){{$message}}@enderror</span>
+                                        <span class="error">@error('terms1')The terms must be accepted.@enderror</span>
                                     @endif
                                 </div>
                                 <div class="row">
@@ -276,7 +276,7 @@
                                 <div class="row">
                                     <div class="col-md-2 form-group">
                                         <select id="title2" name="title" class="custom-select">
-                                            <option value="" @if (old('title') == '') selected="selected" @endif>Please Select</option>
+                                            <option value="" @if (old('title') == '') selected="selected" @endif>Please Select *</option>
                                             <option value="Mr" @if (old('title') == 'Mr') selected="selected" @endif>Mr</option>
                                             <option value="Miss" @if (old('title') == 'Miss') selected="selected" @endif>Miss</option>
                                             <option value="Mrs"@if (old('title') == 'Mrs') selected="selected" @endif>Mrs</option>
@@ -347,8 +347,8 @@
                                         </fieldset>  
                                     </div>
                                     <div class="col-md-3 form-group">
-                                        <select id="state2" name="state2" class="custom-select">
-                                            <option value="" @if (old('state') == '') selected="selected" @endif>Please Select</option>
+                                        <select id="state2" name="state" class="custom-select">
+                                            <option value="" @if (old('state') == '') selected="selected" @endif>Please Select *</option>
                                             <option value="ACT" @if (old('state') == 'ACT') selected="selected" @endif>ACT</option>
                                             <option value="NSW" @if (old('state') == 'NSW') selected="selected" @endif>NSW</option>
                                             <option value="NT"@if (old('state') == 'NT') selected="selected" @endif>NT</option>
@@ -402,27 +402,27 @@
                                 <div class="row">
                                     <div class="col-md-4 form-group">
                                         <fieldset>
-                                            <input name="odometer" type="text" id="odometer2" placeholder="">
-                                            <label class="field-label" for="odometer2">Odometer</label>
+                                            <input name="odometer" type="text" id="odometer2" placeholder="Odometer" value="{{Request::old('odometer') }}">
+                                            <!-- <label class="field-label" for="odometer2">Odometer</label> -->
                                         </fieldset>  
                                     </div>
                                     <div class="col-md-4 form-group">
                                         <fieldset>
-                                            <input name="make" type="text" id="make2" placeholder="">
-                                            <label class="field-label" for="make2">Vehicle Make </label>
+                                            <input name="make" type="text" id="make2" placeholder="Vehicle Make" value="{{Request::old('make') }}">
+                                            <!-- <label class="field-label" for="make2">Vehicle Make </label> -->
                                         </fieldset>  
                                     </div>
                                     <div class="col-md-4 form-group">
                                         <fieldset>
-                                            <input name="model" type="text" id="model2" placeholder="Vehicle Model">
-                                            <label class="field-label" for="model2">Vehicle Model </label>
+                                            <input name="model2" type="text" id="model2" placeholder="Vehicle Model" value="{{Request::old('model2') }}">
+                                            <!-- <label class="field-label" for="model2">Vehicle Model </label> -->
                                         </fieldset>  
                                     </div>
                                 </div>
                                 <div class="custom-checkbox form-group">
                                     <label for="newtrucks2" class="checkbox-custom full-width">
                                         Yes, my vehicle has been serviced at your dealership previously.
-                                        <input type="checkbox" id="newtrucks2" name="newtrucks" value="new-trucks" class="truck-condition"> 
+                                        <input type="checkbox" id="newtrucks2" name="newtrucks" value="new-trucks" @if(Request::old('newtrucks')) checked @endif class="truck-condition"> 
                                         <span class="checkmark"></span>
                                     </label>
                                 </div>
@@ -430,7 +430,7 @@
                                 <div class="row">
                                     <div class="col-md-3 form-group">
                                         <fieldset>
-                                            <input name="preferred_drop_off_date" type="text" id="dropoffdate2" placeholder="Preferred Drop Off Date *" value="{{Request::old('preferred_drop_off_date') }}">
+                                            <input class="form-control preferred-booking-details" name="preferred_drop_off_date" type="date" id="dropoffdate2" placeholder="Preferred Drop Off Date *" value="{{Request::old('preferred_drop_off_date') }}">
                                             <!-- <label class="field-label" for="dropoffdate2">Preferred Drop Off Date <em class="required">*</em></label> -->
                                             @if(session()->has('tab_id') && session()->get('tab_id') == 'service_tab_id')
                                                 <span class="error">@error('preferred_drop_off_date'){{$message}}@enderror</span>
@@ -439,7 +439,7 @@
                                     </div>
                                     <div class="col-md-3 form-group">
                                         <fieldset>
-                                            <input name="preferred_drop_off_time" type="text" id="dropofftime2" placeholder="Preferred Drop Off Time *" value="{{Request::old('preferred_drop_off_time') }}">
+                                            <input class="form-control preferred-booking-details" name="preferred_drop_off_time" type="time" id="dropofftime2" placeholder="Preferred Drop Off Time *" value="{{Request::old('preferred_drop_off_time') }}">
                                             <!-- <label class="field-label" for="dropofftime2">Preferred Drop Off Time <em class="required">*</em></label> -->
                                             @if(session()->has('tab_id') && session()->get('tab_id') == 'service_tab_id')
                                                 <span class="error">@error('preferred_drop_off_time'){{$message}}@enderror</span>
@@ -448,7 +448,7 @@
                                     </div>
                                     <div class="col-md-3 form-group">
                                         <fieldset>
-                                            <input name="preferred_pick_up_date" type="text" id="pickupdate2" placeholder="Preferred Pick Up Date *" value="{{Request::old('preferred_pick_up_date') }}">
+                                            <input class="form-control preferred-booking-details"" name="preferred_pick_up_date" type="date" id="pickupdate2" placeholder="Preferred Pick Up Date *" value="{{Request::old('preferred_pick_up_date') }}">
                                             <!-- <label class="field-label" for="pickupdate2">Preferred Pick Up Date <em class="required">*</em></label> -->
                                             @if(session()->has('tab_id') && session()->get('tab_id') == 'service_tab_id')
                                                 <span class="error">@error('preferred_pick_up_date'){{$message}}@enderror</span>
@@ -457,7 +457,7 @@
                                     </div>
                                     <div class="col-md-3 form-group">
                                         <fieldset>
-                                            <input name="preferred_pick_up_time" type="text" id="pickuptime2" placeholder="Preferred Pick Up Time *" value="{{Request::old('preferred_pick_up_time') }}">
+                                            <input class="form-control preferred-booking-details" name="preferred_pick_up_time" type="time" id="pickuptime2" placeholder="Preferred Pick Up Time *" value="{{Request::old('preferred_pick_up_time') }}">
                                             <!-- <label class="field-label" for="pickuptime2">Preferred Pick Up Time <em class="required">*</em></label> -->
                                             @if(session()->has('tab_id') && session()->get('tab_id') == 'service_tab_id')
                                                 <span class="error">@error('preferred_pick_up_time'){{$message}}@enderror</span>
@@ -468,27 +468,27 @@
                                 <div class="custom-checkbox form-group">
                                     <label for="subscribe" class="checkbox-custom full-width">
                                         Yes, I would like to subscribe to receive the latest offers & product updates.
-                                        <input type="checkbox" id="subscribe" name="subscribe" value="new-trucks" class="truck-condition"> 
+                                        <input type="checkbox" id="subscribe" name="subscribe" value="new-trucks" @if(Request::old('subscribe')) checked @endif class="truck-condition"> 
                                         <span class="checkmark"></span>
                                     </label>
                                 </div>
                                 <div class="custom-checkbox form-group">
                                     <label for="terms2" class="checkbox-custom full-width">
                                         I agree with the website <a href="/disclaimer/">terms of use</a> and that my information will be handled by Daimler Trucks Laverton in accordance with the <a href="https://www.velocitytruckcentres.com.au/privacy-policy">Dealer Privacy Policy</a>.<em class="required">*</em>
-                                        <input type="checkbox" id="terms2" name="terms2" :value=true class="truck-condition"> 
+                                        <input type="checkbox" id="terms2" name="terms2" :value=true @if(Request::old('terms2')) checked @endif class="truck-condition"> 
                                         <span class="checkmark"></span>
                                     </label>
                                     @if(session()->has('tab_id') && session()->get('tab_id') == 'service_tab_id')
-                                        <span class="error">@error('terms'){{$message}}@enderror</span>
+                                        <span class="error">@error('terms2')The terms must be accepted.@enderror</span>
                                     @endif
                                 </div>
                                 <div class="row">
                                     <div class="col-md-12 form-group">
                                         <fieldset>
-                                            <textarea name="detail" type="text" id="detail2" rows="5" cols="30" placeholder="Work required/Comments (maximum 1000 characters) *"></textarea>
+                                            <textarea name="detail" type="text" id="detail2" rows="5" cols="30" placeholder="Work required/Comments (maximum 1000 characters) *">{{ Request::old('detail') }}</textarea>
                                             <!-- <label for="detail" class="field-label">Work required/Comments (maximum 1000 characters) </label> -->
                                             @if(session()->has('tab_id') && session()->get('tab_id') == 'service_tab_id')
-                                                <span class="error">@error('detail'){{$message}}@enderror</span>    
+                                                <span class="error">@error('detail')The work required/comments field is required.@enderror</span>      
                                             @endif
                                         </fieldset>       
                                     </div>
@@ -518,7 +518,7 @@
                                 <div class="row">
                                     <div class="col-md-2 form-group">
                                         <select id="title3" name="title" class="custom-select">
-                                            <option value="" @if (old('title') == '') selected="selected" @endif>Please Select</option>
+                                            <option value="" @if (old('title') == '') selected="selected" @endif>Please Select *</option>
                                             <option value="Mr" @if (old('title') == 'Mr') selected="selected" @endif>Mr</option>
                                             <option value="Miss" @if (old('title') == 'Miss') selected="selected" @endif>Miss</option>
                                             <option value="Mrs"@if (old('title') == 'Mrs') selected="selected" @endif>Mrs</option>
@@ -581,14 +581,14 @@
                                     </div>
                                     <div class="col-md-6 form-group">
                                         <fieldset>
-                                            <input name="loan_term3" type="text" id="loanterm3" placeholder="Loan Term" value="{{ Request::old('loan_term') }}">
+                                            <input name="loan_term3" type="text" id="loanterm3" placeholder="Loan Term" value="{{ Request::old('loan_term3') }}">
                                             <!-- <label class="field-label" for="loanterm3">Loan Term </label> -->
                                         </fieldset>
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <fieldset>
-                                        <textarea name="detail" type="text" id="detail3" rows="5" cols="30" placeholder="Comments (maximum 1000 characters) *"></textarea>
+                                        <textarea name="detail" type="text" id="detail3" rows="5" cols="30" placeholder="Comments (maximum 1000 characters) *">{{ Request::old('detail') }}</textarea>
                                         <!-- <label for="detail3" class="field-label">Comments (maximum 1000 characters) </label> -->
                                         @if(session()->has('tab_id') && session()->get('tab_id') == 'finance_tab_id')
                                             <span class="error">@error('detail'){{$message}}@enderror</span>
@@ -598,11 +598,11 @@
                                 <div class="custom-checkbox form-group">
                                     <label for="terms3" class="checkbox-custom full-width">
                                         I agree with the website <a href="/disclaimer/">terms of use</a> and that my information will be handled by Daimler Trucks Laverton in accordance with the <a href="https://www.velocitytruckcentres.com.au/privacy-policy">Dealer Privacy Policy</a>.<em class="required">*</em>
-                                        <input type="checkbox" id="terms3" name="terms3" :value=true class="truck-condition"> 
+                                        <input type="checkbox" id="terms3" name="terms3" :value=true @if(Request::old('terms3')) checked @endif class="truck-condition"> 
                                         <span class="checkmark"></span>
                                     </label>
                                     @if(session()->has('tab_id') && session()->get('tab_id') == 'finance_tab_id')
-                                        <span class="error">@error('terms'){{$message}}@enderror</span>
+                                        <span class="error">@error('terms3')The terms must be accepted.@enderror</span>
                                     @endif
                                 </div>
                                 <div class="row">
@@ -645,6 +645,28 @@
         }
     });
     function formChangeEvent(tabId) {
+        /* if("{{session()->has('tab_id')}}") {
+            if("{{session()->get('tab_id')}}" == 'contact_tab_id') {
+                $("#partsform")[0].reset();
+                $("#serviceform")[0].reset();
+                $("#financeform")[0].reset();
+            }
+            if("{{session()->get('tab_id')}}" == 'parts_tab_id') {
+                $("#contactform")[0].reset();
+                $("#serviceform")[0].reset();
+                $("#financeform")[0].reset();
+            }
+            if("{{session()->get('tab_id')}}" == 'service_tab_id') {
+                $("#contactform")[0].reset();
+                $("#partsform")[0].reset();
+                $("#financeform")[0].reset();
+            }
+            if("{{session()->get('tab_id')}}" == 'finance_tab_id') {
+                $("#contactform")[0].reset();
+                $("#partsform")[0].reset();
+                $("#serviceform")[0].reset();
+            }
+        } */
         /* $("#contactform")[0].reset();
         $("#partsform")[0].reset();
         $("#serviceform")[0].reset();
