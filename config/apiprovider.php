@@ -29,5 +29,6 @@
             'get_inventory_location' => env('AU_API_URL') . '/api/v1/getinventorylocation',
             'get_factory_offers' => env('AU_API_URL') . '/api/v1/get/offer',
             'get_employee_count' => env('AU_API_URL') . '/api/v1/employee/count/get',
+            'get_au_state' => env('AU_API_URL') . '/api/v1/au/state/get',
         ]
     ];

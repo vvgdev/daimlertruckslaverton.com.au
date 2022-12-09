@@ -643,7 +643,47 @@
             $("#serviceform")[0].reset();
             $("#financeform")[0].reset(); */
         }
+        getAUState();
     });
+    function getAUState() {
+        var req_url = "{{ config('apiprovider.api.get_au_state') }}";
+        $.ajax({
+            url: req_url,
+            type: "get",
+            cache: false,
+            data: {},
+            // dataType: 'json',
+            success: function(response) {
+                // console.log(response);
+                if(response && response.length > 0) {
+                    $('#state2')
+                    .find('option')
+                    .remove()
+                    .end()
+                    .append('<option value="">Please Select</option>')
+                    .val('');
+                    response.forEach(element => {
+                        // console.log(element);
+                        if(element == "{{old('state')}}") {
+                            $('#state2').append($('<option>').val(element).text(element).prop("selected","selected"));
+                        } else {
+                            $('#state2').append($('<option>').val(element).text(element));
+                        }
+                    });
+                } else {
+                    $('#state2')
+                    .find('option')
+                    .remove()
+                    .end()
+                    .append('<option value="">Please Select</option>')
+                    .val('');
+                }
+            },
+            error: function (responseData, textStatus, errorThrown) {
+                console.log('GET failed.');
+            }
+        });
+    }
     function formChangeEvent(tabId) {
         /* if("{{session()->has('tab_id')}}") {
             if("{{session()->get('tab_id')}}" == 'contact_tab_id') {
