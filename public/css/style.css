@@ -4109,9 +4109,9 @@ header nav .main-nav li .nav-secondary li a{
 /* #endregion*/
 
 /* #region ------------------- Service Plans -------------------*/
-.service-plans .capped-service p{
+/* .service-plans .capped-service p{
     font-size: 12px;
-}
+} */
 .service-plans .capped-service .customers th {
     padding-top: 12px;
     padding-bottom: 12px;
